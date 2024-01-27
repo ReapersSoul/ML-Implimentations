@@ -1,0 +1,74 @@
+[
+{
+  "directory": "/home/trevor/Desktop/Echotones/Software/ML Implimentations/build",
+  "command": "/usr/bin/g++ -g -std=gnu++20 -o 1-Perceptron/CMakeFiles/Perceptron.dir/main.o -c \"/home/trevor/Desktop/Echotones/Software/ML Implimentations/1-Perceptron/main.cpp\"",
+  "file": "/home/trevor/Desktop/Echotones/Software/ML Implimentations/1-Perceptron/main.cpp",
+  "output": "1-Perceptron/CMakeFiles/Perceptron.dir/main.o"
+},
+{
+  "directory": "/home/trevor/Desktop/Echotones/Software/ML Implimentations/build",
+  "command": "/usr/bin/g++ -g -std=gnu++20 -o 1-Perceptron/CMakeFiles/Perceptron.dir/Perceptron.o -c \"/home/trevor/Desktop/Echotones/Software/ML Implimentations/1-Perceptron/Perceptron.cpp\"",
+  "file": "/home/trevor/Desktop/Echotones/Software/ML Implimentations/1-Perceptron/Perceptron.cpp",
+  "output": "1-Perceptron/CMakeFiles/Perceptron.dir/Perceptron.o"
+},
+{
+  "directory": "/home/trevor/Desktop/Echotones/Software/ML Implimentations/build",
+  "command": "/usr/bin/g++ -g -std=gnu++20 -o 2-PerceptronLayer/CMakeFiles/PerceptronLayer.dir/main.o -c \"/home/trevor/Desktop/Echotones/Software/ML Implimentations/2-PerceptronLayer/main.cpp\"",
+  "file": "/home/trevor/Desktop/Echotones/Software/ML Implimentations/2-PerceptronLayer/main.cpp",
+  "output": "2-PerceptronLayer/CMakeFiles/PerceptronLayer.dir/main.o"
+},
+{
+  "directory": "/home/trevor/Desktop/Echotones/Software/ML Implimentations/build",
+  "command": "/usr/bin/g++ -g -std=gnu++20 -o 2-PerceptronLayer/CMakeFiles/PerceptronLayer.dir/PerceptronLayer.o -c \"/home/trevor/Desktop/Echotones/Software/ML Implimentations/2-PerceptronLayer/PerceptronLayer.cpp\"",
+  "file": "/home/trevor/Desktop/Echotones/Software/ML Implimentations/2-PerceptronLayer/PerceptronLayer.cpp",
+  "output": "2-PerceptronLayer/CMakeFiles/PerceptronLayer.dir/PerceptronLayer.o"
+},
+{
+  "directory": "/home/trevor/Desktop/Echotones/Software/ML Implimentations/build",
+  "command": "/usr/bin/g++ -g -std=gnu++20 -o 3-DeepNeuralNetwork/CMakeFiles/DeepNeuralNetwork.dir/main.o -c \"/home/trevor/Desktop/Echotones/Software/ML Implimentations/3-DeepNeuralNetwork/main.cpp\"",
+  "file": "/home/trevor/Desktop/Echotones/Software/ML Implimentations/3-DeepNeuralNetwork/main.cpp",
+  "output": "3-DeepNeuralNetwork/CMakeFiles/DeepNeuralNetwork.dir/main.o"
+},
+{
+  "directory": "/home/trevor/Desktop/Echotones/Software/ML Implimentations/build",
+  "command": "/usr/bin/g++ -g -std=gnu++20 -o 3-DeepNeuralNetwork/CMakeFiles/DeepNeuralNetwork.dir/DeepNeuralNetwork.o -c \"/home/trevor/Desktop/Echotones/Software/ML Implimentations/3-DeepNeuralNetwork/DeepNeuralNetwork.cpp\"",
+  "file": "/home/trevor/Desktop/Echotones/Software/ML Implimentations/3-DeepNeuralNetwork/DeepNeuralNetwork.cpp",
+  "output": "3-DeepNeuralNetwork/CMakeFiles/DeepNeuralNetwork.dir/DeepNeuralNetwork.o"
+},
+{
+  "directory": "/home/trevor/Desktop/Echotones/Software/ML Implimentations/build",
+  "command": "/usr/bin/g++ -g -std=gnu++20 -o 4-RecurrentPerceptron/CMakeFiles/RecurrentPerceptron.dir/main.o -c \"/home/trevor/Desktop/Echotones/Software/ML Implimentations/4-RecurrentPerceptron/main.cpp\"",
+  "file": "/home/trevor/Desktop/Echotones/Software/ML Implimentations/4-RecurrentPerceptron/main.cpp",
+  "output": "4-RecurrentPerceptron/CMakeFiles/RecurrentPerceptron.dir/main.o"
+},
+{
+  "directory": "/home/trevor/Desktop/Echotones/Software/ML Implimentations/build",
+  "command": "/usr/bin/g++ -g -std=gnu++20 -o 4-RecurrentPerceptron/CMakeFiles/RecurrentPerceptron.dir/RecurrentPerceptron.o -c \"/home/trevor/Desktop/Echotones/Software/ML Implimentations/4-RecurrentPerceptron/RecurrentPerceptron.cpp\"",
+  "file": "/home/trevor/Desktop/Echotones/Software/ML Implimentations/4-RecurrentPerceptron/RecurrentPerceptron.cpp",
+  "output": "4-RecurrentPerceptron/CMakeFiles/RecurrentPerceptron.dir/RecurrentPerceptron.o"
+},
+{
+  "directory": "/home/trevor/Desktop/Echotones/Software/ML Implimentations/build",
+  "command": "/usr/bin/g++ -g -std=gnu++20 -o 5-RecurrentLayer/CMakeFiles/RecurrentLayer.dir/main.o -c \"/home/trevor/Desktop/Echotones/Software/ML Implimentations/5-RecurrentLayer/main.cpp\"",
+  "file": "/home/trevor/Desktop/Echotones/Software/ML Implimentations/5-RecurrentLayer/main.cpp",
+  "output": "5-RecurrentLayer/CMakeFiles/RecurrentLayer.dir/main.o"
+},
+{
+  "directory": "/home/trevor/Desktop/Echotones/Software/ML Implimentations/build",
+  "command": "/usr/bin/g++ -g -std=gnu++20 -o 5-RecurrentLayer/CMakeFiles/RecurrentLayer.dir/RecurrentLayer.o -c \"/home/trevor/Desktop/Echotones/Software/ML Implimentations/5-RecurrentLayer/RecurrentLayer.cpp\"",
+  "file": "/home/trevor/Desktop/Echotones/Software/ML Implimentations/5-RecurrentLayer/RecurrentLayer.cpp",
+  "output": "5-RecurrentLayer/CMakeFiles/RecurrentLayer.dir/RecurrentLayer.o"
+},
+{
+  "directory": "/home/trevor/Desktop/Echotones/Software/ML Implimentations/build",
+  "command": "/usr/bin/g++ -g -std=gnu++20 -o 6-RecurrentNeuralNetwork/CMakeFiles/RecurrentNeuralNetwork.dir/main.o -c \"/home/trevor/Desktop/Echotones/Software/ML Implimentations/6-RecurrentNeuralNetwork/main.cpp\"",
+  "file": "/home/trevor/Desktop/Echotones/Software/ML Implimentations/6-RecurrentNeuralNetwork/main.cpp",
+  "output": "6-RecurrentNeuralNetwork/CMakeFiles/RecurrentNeuralNetwork.dir/main.o"
+},
+{
+  "directory": "/home/trevor/Desktop/Echotones/Software/ML Implimentations/build",
+  "command": "/usr/bin/g++ -g -std=gnu++20 -o 6-RecurrentNeuralNetwork/CMakeFiles/RecurrentNeuralNetwork.dir/RecurrentNeuralNetwork.o -c \"/home/trevor/Desktop/Echotones/Software/ML Implimentations/6-RecurrentNeuralNetwork/RecurrentNeuralNetwork.cpp\"",
+  "file": "/home/trevor/Desktop/Echotones/Software/ML Implimentations/6-RecurrentNeuralNetwork/RecurrentNeuralNetwork.cpp",
+  "output": "6-RecurrentNeuralNetwork/CMakeFiles/RecurrentNeuralNetwork.dir/RecurrentNeuralNetwork.o"
+}
+]

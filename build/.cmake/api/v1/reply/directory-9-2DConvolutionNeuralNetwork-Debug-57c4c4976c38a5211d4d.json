@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "9-2DConvolutionNeuralNetwork",
+		"source" : "9-2DConvolutionNeuralNetwork"
+	}
+}

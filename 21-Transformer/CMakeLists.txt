@@ -1,0 +1,4 @@
+project(Transformer)
+
+set(CMAKE_CXX_STANDARD 20)
+

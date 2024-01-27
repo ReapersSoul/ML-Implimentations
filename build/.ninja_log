@@ -1,0 +1,19 @@
+# ninja log v5
+436	474	1706295884033963114	2-PerceptronLayer/PerceptronLayer	3f8406e907665a7f
+1	697	1706322915294514756	6-RecurrentNeuralNetwork/CMakeFiles/RecurrentNeuralNetwork.dir/RecurrentNeuralNetwork.o	ff8744e90ef1736a
+2	436	1706295883993963023	2-PerceptronLayer/CMakeFiles/PerceptronLayer.dir/main.o	cbae798fdd0a4d39
+435	477	1706295839489846733	1-Perceptron/Perceptron	8bdc07c65348e4dc
+444	482	1706319257295696692	4-RecurrentPerceptron/RecurrentPerceptron	c9deb2d1b589208
+1	444	1706319257255697101	4-RecurrentPerceptron/CMakeFiles/RecurrentPerceptron.dir/main.o	aabd5f18d56dfa90
+2	625	1706312156605516129	3-DeepNeuralNetwork/CMakeFiles/DeepNeuralNetwork.dir/DeepNeuralNetwork.o	b8587dc3e03c4c91
+435	475	1706320854591014045	5-RecurrentLayer/RecurrentLayer	27678ec3da8efb29
+1	870	1706322801288500246	6-RecurrentNeuralNetwork/CMakeFiles/RecurrentNeuralNetwork.dir/main.o	ec092e1349cd9414
+625	666	1706312156645516036	3-DeepNeuralNetwork/DeepNeuralNetwork	3750c8a3d1607500
+697	743	1706322915342515519	6-RecurrentNeuralNetwork/RecurrentNeuralNetwork	c44324691c673d07
+1	450	1706319257263697020	5-RecurrentLayer/CMakeFiles/RecurrentLayer.dir/RecurrentLayer.o	97e8743ce3c9d062
+1	419	1706318199746712796	4-RecurrentPerceptron/CMakeFiles/RecurrentPerceptron.dir/RecurrentPerceptron.o	86208f2394199e4b
+2	815	1706312114141612861	3-DeepNeuralNetwork/CMakeFiles/DeepNeuralNetwork.dir/main.o	6c3608516276f868
+2	426	1706295883985963005	2-PerceptronLayer/CMakeFiles/PerceptronLayer.dir/PerceptronLayer.o	7d780dc4230fc4e0
+2	435	1706295839449846615	1-Perceptron/CMakeFiles/Perceptron.dir/main.o	783a4d014fd5ff79
+1	435	1706320854551014328	5-RecurrentLayer/CMakeFiles/RecurrentLayer.dir/main.o	b792b124627f2715
+2	408	1706227632876629965	1-Perceptron/CMakeFiles/Perceptron.dir/Perceptron.o	6bdbea6bb5088aba

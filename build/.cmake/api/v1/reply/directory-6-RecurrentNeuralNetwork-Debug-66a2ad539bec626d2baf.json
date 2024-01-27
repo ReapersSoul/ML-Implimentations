@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "6-RecurrentNeuralNetwork",
+		"source" : "6-RecurrentNeuralNetwork"
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "13-2DRecurrentConvolution",
+		"source" : "13-2DRecurrentConvolution"
+	}
+}

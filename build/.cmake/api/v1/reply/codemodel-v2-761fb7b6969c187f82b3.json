@@ -1,0 +1,494 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "1-Perceptron",
+					"jsonFile" : "directory-1-Perceptron-Debug-d916e81b3e6339792ede.json",
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "1-Perceptron",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "2-PerceptronLayer",
+					"jsonFile" : "directory-2-PerceptronLayer-Debug-f5b3aa4655f525b765a4.json",
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "2-PerceptronLayer",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "3-DeepNeuralNetwork",
+					"jsonFile" : "directory-3-DeepNeuralNetwork-Debug-c4bf7cdc6490abffc988.json",
+					"parentIndex" : 0,
+					"projectIndex" : 3,
+					"source" : "3-DeepNeuralNetwork",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "4-RecurrentPerceptron",
+					"jsonFile" : "directory-4-RecurrentPerceptron-Debug-88cb167a3fdaa73f975c.json",
+					"parentIndex" : 0,
+					"projectIndex" : 4,
+					"source" : "4-RecurrentPerceptron",
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"build" : "5-RecurrentLayer",
+					"jsonFile" : "directory-5-RecurrentLayer-Debug-f5a676e0dba3b4ac781d.json",
+					"parentIndex" : 0,
+					"projectIndex" : 5,
+					"source" : "5-RecurrentLayer",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "6-RecurrentNeuralNetwork",
+					"jsonFile" : "directory-6-RecurrentNeuralNetwork-Debug-66a2ad539bec626d2baf.json",
+					"parentIndex" : 0,
+					"projectIndex" : 6,
+					"source" : "6-RecurrentNeuralNetwork",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "7-2DConvolution",
+					"jsonFile" : "directory-7-2DConvolution-Debug-638d40538e61df060de4.json",
+					"parentIndex" : 0,
+					"projectIndex" : 7,
+					"source" : "7-2DConvolution"
+				},
+				{
+					"build" : "8-2DConvolutionLayer",
+					"jsonFile" : "directory-8-2DConvolutionLayer-Debug-2322c4cb56818c0eb462.json",
+					"parentIndex" : 0,
+					"projectIndex" : 8,
+					"source" : "8-2DConvolutionLayer"
+				},
+				{
+					"build" : "9-2DConvolutionNeuralNetwork",
+					"jsonFile" : "directory-9-2DConvolutionNeuralNetwork-Debug-57c4c4976c38a5211d4d.json",
+					"parentIndex" : 0,
+					"projectIndex" : 9,
+					"source" : "9-2DConvolutionNeuralNetwork"
+				},
+				{
+					"build" : "10-3DConvolution",
+					"jsonFile" : "directory-10-3DConvolution-Debug-82aa22cd196850791aac.json",
+					"parentIndex" : 0,
+					"projectIndex" : 10,
+					"source" : "10-3DConvolution"
+				},
+				{
+					"build" : "11-3DConvolutionLayer",
+					"jsonFile" : "directory-11-3DConvolutionLayer-Debug-3e601e6bf9fb233ed831.json",
+					"parentIndex" : 0,
+					"projectIndex" : 11,
+					"source" : "11-3DConvolutionLayer"
+				},
+				{
+					"build" : "12-3DConvolutionNeuralNetwork",
+					"jsonFile" : "directory-12-3DConvolutionNeuralNetwork-Debug-f7bbcf7f0186e426e7a9.json",
+					"parentIndex" : 0,
+					"projectIndex" : 12,
+					"source" : "12-3DConvolutionNeuralNetwork"
+				},
+				{
+					"build" : "13-2DRecurrentConvolution",
+					"jsonFile" : "directory-13-2DRecurrentConvolution-Debug-72eecd46c007c2c43a4d.json",
+					"parentIndex" : 0,
+					"projectIndex" : 13,
+					"source" : "13-2DRecurrentConvolution"
+				},
+				{
+					"build" : "14-2DRecurrentConvolutionLayer",
+					"jsonFile" : "directory-14-2DRecurrentConvolutionLayer-Debug-91d9deb98954627600be.json",
+					"parentIndex" : 0,
+					"projectIndex" : 14,
+					"source" : "14-2DRecurrentConvolutionLayer"
+				},
+				{
+					"build" : "15-2DRecurrentConvolutionNeuralNetwork",
+					"jsonFile" : "directory-15-2DRecurrentConvolutionNeuralNetwork-Debug-3fd0c1a3a77cbb52f1fb.json",
+					"parentIndex" : 0,
+					"projectIndex" : 15,
+					"source" : "15-2DRecurrentConvolutionNeuralNetwork"
+				},
+				{
+					"build" : "16-3DRecurrentConvolution",
+					"jsonFile" : "directory-16-3DRecurrentConvolution-Debug-9a19f07c4a7b4f0cd745.json",
+					"parentIndex" : 0,
+					"projectIndex" : 16,
+					"source" : "16-3DRecurrentConvolution"
+				},
+				{
+					"build" : "17-3DRecurrentConvolutionLayer",
+					"jsonFile" : "directory-17-3DRecurrentConvolutionLayer-Debug-9bcb1074d5635c068a14.json",
+					"parentIndex" : 0,
+					"projectIndex" : 17,
+					"source" : "17-3DRecurrentConvolutionLayer"
+				},
+				{
+					"build" : "18-3DRecurrentConvolutionNeuralNetwork",
+					"jsonFile" : "directory-18-3DRecurrentConvolutionNeuralNetwork-Debug-614c212162756da0e387.json",
+					"parentIndex" : 0,
+					"projectIndex" : 18,
+					"source" : "18-3DRecurrentConvolutionNeuralNetwork"
+				},
+				{
+					"build" : "19-PositionalEncoding",
+					"jsonFile" : "directory-19-PositionalEncoding-Debug-fac8de1ce74e57998d26.json",
+					"parentIndex" : 0,
+					"projectIndex" : 19,
+					"source" : "19-PositionalEncoding"
+				},
+				{
+					"build" : "20-MultiHeadAttention",
+					"jsonFile" : "directory-20-MultiHeadAttention-Debug-8b27d9a1ce286057d9c2.json",
+					"parentIndex" : 0,
+					"projectIndex" : 20,
+					"source" : "20-MultiHeadAttention"
+				},
+				{
+					"build" : "21-Transformer",
+					"jsonFile" : "directory-21-Transformer-Debug-a0cee7bae0a1c46d286a.json",
+					"parentIndex" : 0,
+					"projectIndex" : 21,
+					"source" : "21-Transformer"
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "MLL_Implimentations"
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "Perceptron",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "PerceptronLayer",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "DeepNeuralNetwork",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "RecurrentPerceptron",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						5
+					],
+					"name" : "RecurrentLayer",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						6
+					],
+					"name" : "RecurrentNeuralNetwork",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						7
+					],
+					"name" : "2DConvolution",
+					"parentIndex" : 0
+				},
+				{
+					"directoryIndexes" : 
+					[
+						8
+					],
+					"name" : "2DConvolutionLayer",
+					"parentIndex" : 0
+				},
+				{
+					"directoryIndexes" : 
+					[
+						9
+					],
+					"name" : "2DConvolutionNeuralNetwork",
+					"parentIndex" : 0
+				},
+				{
+					"directoryIndexes" : 
+					[
+						10
+					],
+					"name" : "3DConvolution",
+					"parentIndex" : 0
+				},
+				{
+					"directoryIndexes" : 
+					[
+						11
+					],
+					"name" : "3DConvolutionLayer",
+					"parentIndex" : 0
+				},
+				{
+					"directoryIndexes" : 
+					[
+						12
+					],
+					"name" : "3DConvolutionNeuralNetwork",
+					"parentIndex" : 0
+				},
+				{
+					"directoryIndexes" : 
+					[
+						13
+					],
+					"name" : "2DRecurrentConvolution",
+					"parentIndex" : 0
+				},
+				{
+					"directoryIndexes" : 
+					[
+						14
+					],
+					"name" : "2DRecurrentConvolutionLayer",
+					"parentIndex" : 0
+				},
+				{
+					"directoryIndexes" : 
+					[
+						15
+					],
+					"name" : "2DRecurrentConvolutionNeuralNetwork",
+					"parentIndex" : 0
+				},
+				{
+					"directoryIndexes" : 
+					[
+						16
+					],
+					"name" : "3DRecurrentConvolution",
+					"parentIndex" : 0
+				},
+				{
+					"directoryIndexes" : 
+					[
+						17
+					],
+					"name" : "3DRecurrentConvolutionLayer",
+					"parentIndex" : 0
+				},
+				{
+					"directoryIndexes" : 
+					[
+						18
+					],
+					"name" : "3DRecurrentConvolutionNeuralNetwork",
+					"parentIndex" : 0
+				},
+				{
+					"directoryIndexes" : 
+					[
+						19
+					],
+					"name" : "PositionalEncoding",
+					"parentIndex" : 0
+				},
+				{
+					"directoryIndexes" : 
+					[
+						20
+					],
+					"name" : "MultiHeadAttention",
+					"parentIndex" : 0
+				},
+				{
+					"directoryIndexes" : 
+					[
+						21
+					],
+					"name" : "Transformer",
+					"parentIndex" : 0
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 3,
+					"id" : "DeepNeuralNetwork::@3e6cbc866c4c1967739e",
+					"jsonFile" : "target-DeepNeuralNetwork-Debug-e9d5a891f774173ad122.json",
+					"name" : "DeepNeuralNetwork",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Perceptron::@fd2c9b447e213145fcd7",
+					"jsonFile" : "target-Perceptron-Debug-d6e1b01b1e5f4b9a667e.json",
+					"name" : "Perceptron",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "PerceptronLayer::@6cf546f06d3e4ea8a510",
+					"jsonFile" : "target-PerceptronLayer-Debug-5824e4c2a3c329f2ab39.json",
+					"name" : "PerceptronLayer",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "RecurrentLayer::@dcf9bc6320d7dfcbec08",
+					"jsonFile" : "target-RecurrentLayer-Debug-1dbc973093be627ccb7d.json",
+					"name" : "RecurrentLayer",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "RecurrentNeuralNetwork::@3939c783f2d822f4743b",
+					"jsonFile" : "target-RecurrentNeuralNetwork-Debug-ac49e5cc729ce295921f.json",
+					"name" : "RecurrentNeuralNetwork",
+					"projectIndex" : 6
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "RecurrentPerceptron::@e00c1885d0b1f0b03da5",
+					"jsonFile" : "target-RecurrentPerceptron-Debug-76cf7ea4234023201f6a.json",
+					"name" : "RecurrentPerceptron",
+					"projectIndex" : 4
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/trevor/Desktop/Echotones/Software/ML Implimentations/build",
+		"source" : "/home/trevor/Desktop/Echotones/Software/ML Implimentations"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
