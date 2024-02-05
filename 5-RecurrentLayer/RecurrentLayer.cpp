@@ -13,6 +13,9 @@ void RecurrentLayer::Init(int InSize, int OutSize, ActivationFunction* af, doubl
 	for (int i = 0; i < w.size(); i++) {
 		w[i].resize(OutSize);
 	}
+	b.resize(OutSize);
+	z.resize(OutSize);
+	x.resize(InSize+OutSize);
 	RandomizeWeights(min, max);
 	RandomizeBias(min, max);
 }
@@ -30,7 +33,8 @@ std::vector<double> RecurrentLayer::Forward(std::vector<double> input) {
 		}
 		z[j]+=b[j];
 	}
-	return af->Activate(z);
+	previous_activation=af->Activate(z);
+	return previous_activation;
 }
 
 std::vector<double> RecurrentLayer::Backward(std::vector<double> fg, double lr) {
@@ -47,14 +51,8 @@ std::vector<double> RecurrentLayer::Backward(std::vector<double> fg, double lr) 
 	return dx;
 }
 
-std::vector<double> RecurrentLayer::GetWeights() {
-	std::vector<double> weights;
-	for (int i = 0; i < w.size(); i++) {
-		for (int j = 0; j < w[i].size(); j++) {
-			weights.push_back(w[i][j]);
-		}
-	}
-	return weights;
+std::vector<std::vector<double>> RecurrentLayer::GetWeights() {
+	return w;
 }
 
 void RecurrentLayer::SetWeights(std::vector<std::vector<double>> weights) {
@@ -99,4 +97,16 @@ void RecurrentLayer::RandomizeBias(double min, double max) {
 		while(r==0.0) r = RandRange(min, max);
 		b[j] = r;
 	}
+}
+
+std::vector<double> RecurrentLayer::GetX() {
+	return x;
+}
+
+std::vector<double> RecurrentLayer::GetZ() {
+	return z;
+}
+
+std::vector<double> RecurrentLayer::GetPreviousActivation() {
+	return previous_activation;
 }

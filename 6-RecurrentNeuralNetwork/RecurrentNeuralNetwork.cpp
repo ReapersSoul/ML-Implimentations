@@ -8,46 +8,55 @@ RecurrentNeuralNetwork::~RecurrentNeuralNetwork()
 {
 }
 
+double RecurrentNeuralNetwork::Clamp(double value, double min, double max)
+{
+	if (value < min)
+		return min;
+	if (value > max)
+		return max;
+	return value;
+}
+
+double RecurrentNeuralNetwork::Sigmoid(double value, double min, double max)
+{
+	return (max - min) / (1.0 + exp(-value)) + min;
+}
+
 void RecurrentNeuralNetwork::Init(std::vector<int> LayerSizes, ActivationFunction *af, double min, double max)
 {
 	this->af = af;
-	w.resize(LayerSizes.size() - 1);
-	for (int i = 0; i < w.size(); i++)
-	{
-		w[i].resize(LayerSizes[i]+LayerSizes[i+1]);
-		for (int j = 0; j < w[i].size(); j++)
-		{
-			w[i][j].resize(LayerSizes[i + 1]+LayerSizes[i+2]);
-		}
-	}
-
-	b.resize(LayerSizes.size() - 1);
-	for (int i = 0; i < b.size(); i++)
-	{
-		b[i].resize(LayerSizes[i + 1]);
-	}
-
+	
 	x.resize(LayerSizes.size());
-	for (int i = 0; i < x.size(); i++)
-	{
-		if(i==0)
-			x[i].resize(LayerSizes[i]);
-		else
-			x[i].resize(LayerSizes[i]+LayerSizes[i+1]);
-	}
-
+	w.resize(LayerSizes.size() - 1);
+	b.resize(LayerSizes.size() - 1);
 	z.resize(LayerSizes.size() - 1);
-	for (int i = 0; i < z.size(); i++)
+	previous_activation.resize(LayerSizes.size() - 1);
+	for (int i = 1; i < LayerSizes.size(); i++)
 	{
-		z[i].resize(LayerSizes[i + 1]);
+		ResizeLayer(LayerSizes[i-1], LayerSizes[i], i-1);
 	}
+	x[x.size()-1].resize(LayerSizes[LayerSizes.size()-1]);
 
 	RandomizeWeights(min, max);
 	RandomizeBias(min, max);
 }
 
-std::vector<double> RecurrentNeuralNetwork::ForwardLayer(std::vector<double> _x, std::vector<std::vector<double>> _w, std::vector<double> _b, std::vector<double> &_z, ActivationFunction *_af)
+void RecurrentNeuralNetwork::ResizeLayer(int InSize,int OutSize,int layer){
+	w[layer].resize(InSize+OutSize);
+	previous_activation[layer].resize(OutSize);
+	for (int i = 0; i < w[layer].size(); i++) {
+		w[layer][i].resize(OutSize);
+	}
+	b[layer].resize(OutSize);
+	z[layer].resize(OutSize);
+	x[layer].resize(InSize+OutSize);
+}
+
+std::vector<double> RecurrentNeuralNetwork::ForwardLayer(std::vector<double> _x, std::vector<std::vector<double>> _w, std::vector<double> _b, std::vector<double> &_z, std::vector<double> &_previous_activation, ActivationFunction *_af)
 {
+	for (int i = 0; i < _previous_activation.size(); i++) {
+		_x.push_back(_previous_activation[i]);
+	}
 	_z.resize(_w[0].size());
 	for (int j = 0; j < _w[0].size(); j++) {
 		_z[j] = 0.0;
@@ -56,23 +65,30 @@ std::vector<double> RecurrentNeuralNetwork::ForwardLayer(std::vector<double> _x,
 		}
 		_z[j]+=_b[j];
 	}
-	return _af->Activate(_z);
+	_previous_activation=_af->Activate(_z);
+	return _previous_activation;
 }
 
-std::vector<double> RecurrentNeuralNetwork::BackwardLayer(std::vector<double> _x, std::vector<std::vector<double>> &_w, std::vector<double> &_b, std::vector<double> _z, ActivationFunction *_af, std::vector<double> _fg, double _lr)
+std::vector<double> RecurrentNeuralNetwork::BackwardLayer(std::vector<double> _x, std::vector<std::vector<double>> &_w, std::vector<double> &_b, std::vector<double> _z, std::vector<double> _previous_activation, ActivationFunction *_af, std::vector<double> _fg, double _lr)
 {
+	for (int i = 0; i < _previous_activation.size(); i++) {
+		_x.push_back(_previous_activation[i]);
+	}
+
 	std::vector<double> dx(_w.size());
 	std::vector<double> dz(_w[0].size());
+
 	for (int j = 0; j < _w[0].size(); j++)
 	{
 		dz[j] = _af->Derivative(_z[j]) * _fg[j];
 		for (int i = 0; i < _w.size(); i++)
 		{
-			dx[i] += _w[i][j] * dz[j];
-			_w[i][j] -= _lr * dz[j] * _x[i];
+			dx[i] +=_lr*_w[i][j] * dz[j];
+			_w[i][j] -= _lr*_x[i] * dz[j];
 		}
-		_b[j] -= _lr * dz[j];
+		_b[j] -= _lr*dz[j];
 	}
+	
 	return dx;
 }
 
@@ -81,14 +97,9 @@ std::vector<double> RecurrentNeuralNetwork::Forward(std::vector<double> input)
 	// forward the network layer by layer using ForwardLayer
 	// return the output of the last layer
 	x[0] = input;
-	for (int i = 0; i < previous_activation.size(); i++)
-	{
-		x[0].push_back(previous_activation[0][i]);
-	}
 	for (int i = 0; i < w.size(); i++)
 	{
-		x[i + 1] = ForwardLayer(x[i], w[i], b[i], z[i], af);
-		x[i + 1].push_back(x[i][0]);
+		x[i + 1] = ForwardLayer(x[i], w[i], b[i], z[i],previous_activation[i], af);
 	}
 	
 	return x[w.size()];
@@ -98,10 +109,9 @@ std::vector<double> RecurrentNeuralNetwork::Backward(std::vector<double> fg, dou
 {
 	// backward the network layer by layer using BackwardLayer
 	// return the output of the first layer
-	std::vector<std::thread> threads;
 	for (int i = w.size() - 1; i >= 0; i--)
 	{
-		fg = BackwardLayer(x[i], w[i], b[i], z[i], af, fg, lr);
+		fg = BackwardLayer(x[i], w[i], b[i], z[i],previous_activation[i], af, fg, lr);
 	}
 	return fg;
 }
@@ -166,11 +176,9 @@ void RecurrentNeuralNetwork::SetBias(std::vector<std::vector<double>> bias)
 
 void RecurrentNeuralNetwork::RandomizeBias(double min, double max)
 {
-	b.resize(w[0].size());
-	for (int j = 0; j < w[0].size(); j++)
+	for (int j = 0; j < b.size(); j++)
 	{
-		b[j].resize(w[0][j].size());
-		for (int k = 0; k < w[0][j].size(); k++)
+		for (int k = 0; k < b[j].size(); k++)
 		{
 			double r = RandRange(min, max);
 			while (r == 0.0)
@@ -178,4 +186,29 @@ void RecurrentNeuralNetwork::RandomizeBias(double min, double max)
 			b[j][k] = r;
 		}
 	}
+}
+
+std::vector<std::vector<std::vector<double>>> RecurrentNeuralNetwork::GetW()
+{
+	return w;
+}
+
+std::vector<std::vector<double>> RecurrentNeuralNetwork::GetB()
+{
+	return b;
+}
+
+std::vector<std::vector<double>> RecurrentNeuralNetwork::GetZ()
+{
+	return z;
+}
+
+std::vector<std::vector<double>> RecurrentNeuralNetwork::GetX()
+{
+	return x;
+}
+
+std::vector<std::vector<double>> RecurrentNeuralNetwork::GetPreviousActivation()
+{
+	return previous_activation;
 }

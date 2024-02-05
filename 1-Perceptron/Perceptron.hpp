@@ -28,4 +28,7 @@ public:
 	double GetBias();
 	void SetBias(double b);
 	void RandomizeBias(double min, double max);
+
+	std::vector<double> GetX();
+	double GetZ();
 };

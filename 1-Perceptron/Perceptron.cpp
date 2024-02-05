@@ -74,3 +74,11 @@ void Perceptron::RandomizeBias(double min, double max) {
 	while(r==0.0) r = RandRange(min, max);
 	b = r;
 }
+
+std::vector<double> Perceptron::GetX() {
+	return x;
+}
+
+double Perceptron::GetZ() {
+	return z;
+}

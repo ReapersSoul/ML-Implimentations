@@ -33,4 +33,10 @@ public:
 	std::vector<std::vector<double>> GetBias();
 	void SetBias(std::vector<std::vector<double>> b);
 	void RandomizeBias(double min, double max);
+
+	//getters
+	std::vector<std::vector<std::vector<double>>> GetW();
+	std::vector<std::vector<double>> GetB();
+	std::vector<std::vector<double>> GetZ();
+	std::vector<std::vector<double>> GetX();
 };

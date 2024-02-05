@@ -505,3 +505,42 @@ events:
       
       
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.27/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/usr/share/cmake-3.27/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "/usr/share/cmake-3.27/Modules/FindBZip2.cmake:93 (CHECK_SYMBOL_EXISTS)"
+      - "/VCPKG/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
+      - "/VCPKG/vcpkg/installed/x64-linux/share/freetype/vcpkg-cmake-wrapper.cmake:12 (find_package)"
+      - "/VCPKG/vcpkg/scripts/buildsystems/vcpkg.cmake:813 (include)"
+      - "/usr/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/VCPKG/vcpkg/installed/x64-linux/share/SDL2_ttf/SDL2_ttfConfig.cmake:42 (find_dependency)"
+      - "/VCPKG/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
+      - "6-RecurrentNeuralNetwork/CMakeLists.txt:15 (find_package)"
+    checks:
+      - "Looking for BZ2_bzCompressInit"
+    directories:
+      source: "/home/trevor/Desktop/Echotones/Software/ML Implimentations/build/CMakeFiles/CMakeScratch/TryCompile-wE9pYH"
+      binary: "/home/trevor/Desktop/Echotones/Software/ML Implimentations/build/CMakeFiles/CMakeScratch/TryCompile-wE9pYH"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/VCPKG/vcpkg/installed/x64-linux/share/SDL2_ttf"
+      VCPKG_APPLOCAL_DEPS: "ON"
+      VCPKG_TARGET_TRIPLET: "x64-linux"
+      Z_VCPKG_ROOT_DIR: "/VCPKG/vcpkg"
+    buildResult:
+      variable: "BZIP2_NEED_PREFIX"
+      cached: true
+      stdout: |
+        Change Dir: '/home/trevor/Desktop/Echotones/Software/ML Implimentations/build/CMakeFiles/CMakeScratch/TryCompile-wE9pYH'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_857c0
+        [1/2] /usr/bin/gcc  -I/VCPKG/vcpkg/installed/x64-linux/include  -o CMakeFiles/cmTC_857c0.dir/CheckSymbolExists.c.o -c '/home/trevor/Desktop/Echotones/Software/ML Implimentations/build/CMakeFiles/CMakeScratch/TryCompile-wE9pYH/CheckSymbolExists.c'
+        [2/2] : && /usr/bin/gcc   CMakeFiles/cmTC_857c0.dir/CheckSymbolExists.c.o -o cmTC_857c0  /VCPKG/vcpkg/installed/x64-linux/lib/libbz2.a && :
+        
+      exitCode: 0
+...

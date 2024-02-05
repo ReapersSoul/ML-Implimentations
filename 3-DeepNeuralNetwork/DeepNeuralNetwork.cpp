@@ -11,33 +11,25 @@ DeepNeuralNetwork::~DeepNeuralNetwork()
 void DeepNeuralNetwork::Init(std::vector<int> LayerSizes, ActivationFunction *af, double min, double max)
 {
 	this->af = af;
-	w.resize(LayerSizes.size() - 1);
-	for (int i = 0; i < w.size(); i++)
-	{
-		w[i].resize(LayerSizes[i]);
-		for (int j = 0; j < w[i].size(); j++)
-		{
-			w[i][j].resize(LayerSizes[i + 1]);
-		}
-	}
-
-	b.resize(LayerSizes.size() - 1);
-	for (int i = 0; i < b.size(); i++)
-	{
-		b[i].resize(LayerSizes[i + 1]);
-	}
-
 	x.resize(LayerSizes.size());
-	for (int i = 0; i < x.size(); i++)
+	for (int i = 0; i < LayerSizes.size(); i++)
 	{
 		x[i].resize(LayerSizes[i]);
 	}
-
-	z.resize(LayerSizes.size() - 1); // Corrected line
-	for (int i = 0; i < z.size(); i++)
+	z.resize(LayerSizes.size() - 1);
+	w.resize(LayerSizes.size() - 1);
+	b.resize(LayerSizes.size() - 1);
+	for (int i = 1; i < LayerSizes.size(); i++)
 	{
-		z[i].resize(LayerSizes[i + 1]); // Corrected line
+		w[i - 1].resize(LayerSizes[i - 1]);
+		b[i - 1].resize(LayerSizes[i]);
+		z[i - 1].resize(LayerSizes[i]);
+		for (int j = 0; j < LayerSizes[i - 1]; j++)
+		{
+			w[i - 1][j].resize(LayerSizes[i]);
+		}
 	}
+	
 
 	RandomizeWeights(min, max);
 	RandomizeBias(min, max);
@@ -158,16 +150,34 @@ void DeepNeuralNetwork::SetBias(std::vector<std::vector<double>> bias)
 
 void DeepNeuralNetwork::RandomizeBias(double min, double max)
 {
-	b.resize(w[0].size());
-	for (int j = 0; j < w[0].size(); j++)
+	for (int i = 0; i < b.size(); i++)
 	{
-		b[j].resize(w[0][j].size());
-		for (int k = 0; k < w[0][j].size(); k++)
+		for (int j = 0; j < b[i].size(); j++)
 		{
 			double r = RandRange(min, max);
 			while (r == 0.0)
 				r = RandRange(min, max);
-			b[j][k] = r;
+			b[i][j] = r;
 		}
 	}
+}
+
+std::vector<std::vector<std::vector<double>>> DeepNeuralNetwork::GetW()
+{
+	return w;
+}
+
+std::vector<std::vector<double>> DeepNeuralNetwork::GetB()
+{
+	return b;
+}
+
+std::vector<std::vector<double>> DeepNeuralNetwork::GetZ()
+{
+	return z;
+}
+
+std::vector<std::vector<double>> DeepNeuralNetwork::GetX()
+{
+	return x;
 }

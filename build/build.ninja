@@ -80,12 +80,14 @@ build cmake_object_order_depends_target_Perceptron: phony || 1-Perceptron/CMakeF
 build 1-Perceptron/CMakeFiles/Perceptron.dir/main.o: CXX_COMPILER__Perceptron_unscanned_Debug /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/1-Perceptron/main.cpp || cmake_object_order_depends_target_Perceptron
   DEP_FILE = 1-Perceptron/CMakeFiles/Perceptron.dir/main.o.d
   FLAGS = -g -std=gnu++20
+  INCLUDES = -isystem /VCPKG/vcpkg/installed/x64-linux/include -isystem /VCPKG/vcpkg/installed/x64-linux/include/SDL2
   OBJECT_DIR = 1-Perceptron/CMakeFiles/Perceptron.dir
   OBJECT_FILE_DIR = 1-Perceptron/CMakeFiles/Perceptron.dir
 
 build 1-Perceptron/CMakeFiles/Perceptron.dir/Perceptron.o: CXX_COMPILER__Perceptron_unscanned_Debug /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/1-Perceptron/Perceptron.cpp || cmake_object_order_depends_target_Perceptron
   DEP_FILE = 1-Perceptron/CMakeFiles/Perceptron.dir/Perceptron.o.d
   FLAGS = -g -std=gnu++20
+  INCLUDES = -isystem /VCPKG/vcpkg/installed/x64-linux/include -isystem /VCPKG/vcpkg/installed/x64-linux/include/SDL2
   OBJECT_DIR = 1-Perceptron/CMakeFiles/Perceptron.dir
   OBJECT_FILE_DIR = 1-Perceptron/CMakeFiles/Perceptron.dir
 
@@ -97,9 +99,11 @@ build 1-Perceptron/CMakeFiles/Perceptron.dir/Perceptron.o: CXX_COMPILER__Percept
 #############################################
 # Link the executable 1-Perceptron/Perceptron
 
-build 1-Perceptron/Perceptron: CXX_EXECUTABLE_LINKER__Perceptron_Debug 1-Perceptron/CMakeFiles/Perceptron.dir/main.o 1-Perceptron/CMakeFiles/Perceptron.dir/Perceptron.o
+build 1-Perceptron/Perceptron: CXX_EXECUTABLE_LINKER__Perceptron_Debug 1-Perceptron/CMakeFiles/Perceptron.dir/main.o 1-Perceptron/CMakeFiles/Perceptron.dir/Perceptron.o | /VCPKG/vcpkg/installed/x64-linux/debug/lib/libSDL2maind.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libSDL2d.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libSDL2_ttf.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libfreetyped.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libbz2d.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libpng16d.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libz.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libbz2d.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libpng16d.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libz.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libbrotlidec.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libbrotlicommon.a
   FLAGS = -g
   LINK_FLAGS = -rdynamic
+  LINK_LIBRARIES = /VCPKG/vcpkg/installed/x64-linux/debug/lib/libSDL2maind.a  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libSDL2d.a  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libSDL2_ttf.a  -pthread  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libfreetyped.a  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libbz2d.a  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libpng16d.a  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libz.a  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libbz2d.a  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libpng16d.a  -lm  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libz.a  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libbrotlidec.a  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libbrotlicommon.a
+  LINK_PATH = -L/VCPKG/vcpkg/installed/x64-linux/debug/lib
   OBJECT_DIR = 1-Perceptron/CMakeFiles/Perceptron.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -146,12 +150,14 @@ build cmake_object_order_depends_target_PerceptronLayer: phony || 2-PerceptronLa
 build 2-PerceptronLayer/CMakeFiles/PerceptronLayer.dir/main.o: CXX_COMPILER__PerceptronLayer_unscanned_Debug /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/2-PerceptronLayer/main.cpp || cmake_object_order_depends_target_PerceptronLayer
   DEP_FILE = 2-PerceptronLayer/CMakeFiles/PerceptronLayer.dir/main.o.d
   FLAGS = -g -std=gnu++20
+  INCLUDES = -isystem /VCPKG/vcpkg/installed/x64-linux/include -isystem /VCPKG/vcpkg/installed/x64-linux/include/SDL2
   OBJECT_DIR = 2-PerceptronLayer/CMakeFiles/PerceptronLayer.dir
   OBJECT_FILE_DIR = 2-PerceptronLayer/CMakeFiles/PerceptronLayer.dir
 
 build 2-PerceptronLayer/CMakeFiles/PerceptronLayer.dir/PerceptronLayer.o: CXX_COMPILER__PerceptronLayer_unscanned_Debug /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/2-PerceptronLayer/PerceptronLayer.cpp || cmake_object_order_depends_target_PerceptronLayer
   DEP_FILE = 2-PerceptronLayer/CMakeFiles/PerceptronLayer.dir/PerceptronLayer.o.d
   FLAGS = -g -std=gnu++20
+  INCLUDES = -isystem /VCPKG/vcpkg/installed/x64-linux/include -isystem /VCPKG/vcpkg/installed/x64-linux/include/SDL2
   OBJECT_DIR = 2-PerceptronLayer/CMakeFiles/PerceptronLayer.dir
   OBJECT_FILE_DIR = 2-PerceptronLayer/CMakeFiles/PerceptronLayer.dir
 
@@ -163,9 +169,11 @@ build 2-PerceptronLayer/CMakeFiles/PerceptronLayer.dir/PerceptronLayer.o: CXX_CO
 #############################################
 # Link the executable 2-PerceptronLayer/PerceptronLayer
 
-build 2-PerceptronLayer/PerceptronLayer: CXX_EXECUTABLE_LINKER__PerceptronLayer_Debug 2-PerceptronLayer/CMakeFiles/PerceptronLayer.dir/main.o 2-PerceptronLayer/CMakeFiles/PerceptronLayer.dir/PerceptronLayer.o
+build 2-PerceptronLayer/PerceptronLayer: CXX_EXECUTABLE_LINKER__PerceptronLayer_Debug 2-PerceptronLayer/CMakeFiles/PerceptronLayer.dir/main.o 2-PerceptronLayer/CMakeFiles/PerceptronLayer.dir/PerceptronLayer.o | /VCPKG/vcpkg/installed/x64-linux/debug/lib/libSDL2maind.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libSDL2d.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libSDL2_ttf.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libfreetyped.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libbz2d.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libpng16d.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libz.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libbz2d.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libpng16d.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libz.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libbrotlidec.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libbrotlicommon.a
   FLAGS = -g
   LINK_FLAGS = -rdynamic
+  LINK_LIBRARIES = /VCPKG/vcpkg/installed/x64-linux/debug/lib/libSDL2maind.a  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libSDL2d.a  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libSDL2_ttf.a  -pthread  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libfreetyped.a  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libbz2d.a  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libpng16d.a  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libz.a  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libbz2d.a  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libpng16d.a  -lm  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libz.a  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libbrotlidec.a  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libbrotlicommon.a
+  LINK_PATH = -L/VCPKG/vcpkg/installed/x64-linux/debug/lib
   OBJECT_DIR = 2-PerceptronLayer/CMakeFiles/PerceptronLayer.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -212,12 +220,14 @@ build cmake_object_order_depends_target_DeepNeuralNetwork: phony || 3-DeepNeural
 build 3-DeepNeuralNetwork/CMakeFiles/DeepNeuralNetwork.dir/main.o: CXX_COMPILER__DeepNeuralNetwork_unscanned_Debug /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/3-DeepNeuralNetwork/main.cpp || cmake_object_order_depends_target_DeepNeuralNetwork
   DEP_FILE = 3-DeepNeuralNetwork/CMakeFiles/DeepNeuralNetwork.dir/main.o.d
   FLAGS = -g -std=gnu++20
+  INCLUDES = -isystem /VCPKG/vcpkg/installed/x64-linux/include -isystem /VCPKG/vcpkg/installed/x64-linux/include/SDL2
   OBJECT_DIR = 3-DeepNeuralNetwork/CMakeFiles/DeepNeuralNetwork.dir
   OBJECT_FILE_DIR = 3-DeepNeuralNetwork/CMakeFiles/DeepNeuralNetwork.dir
 
 build 3-DeepNeuralNetwork/CMakeFiles/DeepNeuralNetwork.dir/DeepNeuralNetwork.o: CXX_COMPILER__DeepNeuralNetwork_unscanned_Debug /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/3-DeepNeuralNetwork/DeepNeuralNetwork.cpp || cmake_object_order_depends_target_DeepNeuralNetwork
   DEP_FILE = 3-DeepNeuralNetwork/CMakeFiles/DeepNeuralNetwork.dir/DeepNeuralNetwork.o.d
   FLAGS = -g -std=gnu++20
+  INCLUDES = -isystem /VCPKG/vcpkg/installed/x64-linux/include -isystem /VCPKG/vcpkg/installed/x64-linux/include/SDL2
   OBJECT_DIR = 3-DeepNeuralNetwork/CMakeFiles/DeepNeuralNetwork.dir
   OBJECT_FILE_DIR = 3-DeepNeuralNetwork/CMakeFiles/DeepNeuralNetwork.dir
 
@@ -229,9 +239,11 @@ build 3-DeepNeuralNetwork/CMakeFiles/DeepNeuralNetwork.dir/DeepNeuralNetwork.o: 
 #############################################
 # Link the executable 3-DeepNeuralNetwork/DeepNeuralNetwork
 
-build 3-DeepNeuralNetwork/DeepNeuralNetwork: CXX_EXECUTABLE_LINKER__DeepNeuralNetwork_Debug 3-DeepNeuralNetwork/CMakeFiles/DeepNeuralNetwork.dir/main.o 3-DeepNeuralNetwork/CMakeFiles/DeepNeuralNetwork.dir/DeepNeuralNetwork.o
+build 3-DeepNeuralNetwork/DeepNeuralNetwork: CXX_EXECUTABLE_LINKER__DeepNeuralNetwork_Debug 3-DeepNeuralNetwork/CMakeFiles/DeepNeuralNetwork.dir/main.o 3-DeepNeuralNetwork/CMakeFiles/DeepNeuralNetwork.dir/DeepNeuralNetwork.o | /VCPKG/vcpkg/installed/x64-linux/debug/lib/libSDL2maind.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libSDL2d.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libSDL2_ttf.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libfreetyped.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libbz2d.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libpng16d.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libz.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libbz2d.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libpng16d.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libz.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libbrotlidec.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libbrotlicommon.a
   FLAGS = -g
   LINK_FLAGS = -rdynamic
+  LINK_LIBRARIES = /VCPKG/vcpkg/installed/x64-linux/debug/lib/libSDL2maind.a  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libSDL2d.a  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libSDL2_ttf.a  -pthread  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libfreetyped.a  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libbz2d.a  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libpng16d.a  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libz.a  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libbz2d.a  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libpng16d.a  -lm  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libz.a  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libbrotlidec.a  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libbrotlicommon.a
+  LINK_PATH = -L/VCPKG/vcpkg/installed/x64-linux/debug/lib
   OBJECT_DIR = 3-DeepNeuralNetwork/CMakeFiles/DeepNeuralNetwork.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -278,12 +290,14 @@ build cmake_object_order_depends_target_RecurrentPerceptron: phony || 4-Recurren
 build 4-RecurrentPerceptron/CMakeFiles/RecurrentPerceptron.dir/main.o: CXX_COMPILER__RecurrentPerceptron_unscanned_Debug /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/4-RecurrentPerceptron/main.cpp || cmake_object_order_depends_target_RecurrentPerceptron
   DEP_FILE = 4-RecurrentPerceptron/CMakeFiles/RecurrentPerceptron.dir/main.o.d
   FLAGS = -g -std=gnu++20
+  INCLUDES = -isystem /VCPKG/vcpkg/installed/x64-linux/include -isystem /VCPKG/vcpkg/installed/x64-linux/include/SDL2
   OBJECT_DIR = 4-RecurrentPerceptron/CMakeFiles/RecurrentPerceptron.dir
   OBJECT_FILE_DIR = 4-RecurrentPerceptron/CMakeFiles/RecurrentPerceptron.dir
 
 build 4-RecurrentPerceptron/CMakeFiles/RecurrentPerceptron.dir/RecurrentPerceptron.o: CXX_COMPILER__RecurrentPerceptron_unscanned_Debug /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/4-RecurrentPerceptron/RecurrentPerceptron.cpp || cmake_object_order_depends_target_RecurrentPerceptron
   DEP_FILE = 4-RecurrentPerceptron/CMakeFiles/RecurrentPerceptron.dir/RecurrentPerceptron.o.d
   FLAGS = -g -std=gnu++20
+  INCLUDES = -isystem /VCPKG/vcpkg/installed/x64-linux/include -isystem /VCPKG/vcpkg/installed/x64-linux/include/SDL2
   OBJECT_DIR = 4-RecurrentPerceptron/CMakeFiles/RecurrentPerceptron.dir
   OBJECT_FILE_DIR = 4-RecurrentPerceptron/CMakeFiles/RecurrentPerceptron.dir
 
@@ -295,9 +309,11 @@ build 4-RecurrentPerceptron/CMakeFiles/RecurrentPerceptron.dir/RecurrentPerceptr
 #############################################
 # Link the executable 4-RecurrentPerceptron/RecurrentPerceptron
 
-build 4-RecurrentPerceptron/RecurrentPerceptron: CXX_EXECUTABLE_LINKER__RecurrentPerceptron_Debug 4-RecurrentPerceptron/CMakeFiles/RecurrentPerceptron.dir/main.o 4-RecurrentPerceptron/CMakeFiles/RecurrentPerceptron.dir/RecurrentPerceptron.o
+build 4-RecurrentPerceptron/RecurrentPerceptron: CXX_EXECUTABLE_LINKER__RecurrentPerceptron_Debug 4-RecurrentPerceptron/CMakeFiles/RecurrentPerceptron.dir/main.o 4-RecurrentPerceptron/CMakeFiles/RecurrentPerceptron.dir/RecurrentPerceptron.o | /VCPKG/vcpkg/installed/x64-linux/debug/lib/libSDL2maind.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libSDL2d.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libSDL2_ttf.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libfreetyped.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libbz2d.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libpng16d.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libz.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libbz2d.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libpng16d.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libz.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libbrotlidec.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libbrotlicommon.a
   FLAGS = -g
   LINK_FLAGS = -rdynamic
+  LINK_LIBRARIES = /VCPKG/vcpkg/installed/x64-linux/debug/lib/libSDL2maind.a  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libSDL2d.a  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libSDL2_ttf.a  -pthread  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libfreetyped.a  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libbz2d.a  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libpng16d.a  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libz.a  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libbz2d.a  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libpng16d.a  -lm  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libz.a  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libbrotlidec.a  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libbrotlicommon.a
+  LINK_PATH = -L/VCPKG/vcpkg/installed/x64-linux/debug/lib
   OBJECT_DIR = 4-RecurrentPerceptron/CMakeFiles/RecurrentPerceptron.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -344,12 +360,14 @@ build cmake_object_order_depends_target_RecurrentLayer: phony || 5-RecurrentLaye
 build 5-RecurrentLayer/CMakeFiles/RecurrentLayer.dir/main.o: CXX_COMPILER__RecurrentLayer_unscanned_Debug /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/5-RecurrentLayer/main.cpp || cmake_object_order_depends_target_RecurrentLayer
   DEP_FILE = 5-RecurrentLayer/CMakeFiles/RecurrentLayer.dir/main.o.d
   FLAGS = -g -std=gnu++20
+  INCLUDES = -isystem /VCPKG/vcpkg/installed/x64-linux/include -isystem /VCPKG/vcpkg/installed/x64-linux/include/SDL2
   OBJECT_DIR = 5-RecurrentLayer/CMakeFiles/RecurrentLayer.dir
   OBJECT_FILE_DIR = 5-RecurrentLayer/CMakeFiles/RecurrentLayer.dir
 
 build 5-RecurrentLayer/CMakeFiles/RecurrentLayer.dir/RecurrentLayer.o: CXX_COMPILER__RecurrentLayer_unscanned_Debug /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/5-RecurrentLayer/RecurrentLayer.cpp || cmake_object_order_depends_target_RecurrentLayer
   DEP_FILE = 5-RecurrentLayer/CMakeFiles/RecurrentLayer.dir/RecurrentLayer.o.d
   FLAGS = -g -std=gnu++20
+  INCLUDES = -isystem /VCPKG/vcpkg/installed/x64-linux/include -isystem /VCPKG/vcpkg/installed/x64-linux/include/SDL2
   OBJECT_DIR = 5-RecurrentLayer/CMakeFiles/RecurrentLayer.dir
   OBJECT_FILE_DIR = 5-RecurrentLayer/CMakeFiles/RecurrentLayer.dir
 
@@ -361,9 +379,11 @@ build 5-RecurrentLayer/CMakeFiles/RecurrentLayer.dir/RecurrentLayer.o: CXX_COMPI
 #############################################
 # Link the executable 5-RecurrentLayer/RecurrentLayer
 
-build 5-RecurrentLayer/RecurrentLayer: CXX_EXECUTABLE_LINKER__RecurrentLayer_Debug 5-RecurrentLayer/CMakeFiles/RecurrentLayer.dir/main.o 5-RecurrentLayer/CMakeFiles/RecurrentLayer.dir/RecurrentLayer.o
+build 5-RecurrentLayer/RecurrentLayer: CXX_EXECUTABLE_LINKER__RecurrentLayer_Debug 5-RecurrentLayer/CMakeFiles/RecurrentLayer.dir/main.o 5-RecurrentLayer/CMakeFiles/RecurrentLayer.dir/RecurrentLayer.o | /VCPKG/vcpkg/installed/x64-linux/debug/lib/libSDL2maind.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libSDL2d.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libSDL2_ttf.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libfreetyped.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libbz2d.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libpng16d.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libz.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libbz2d.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libpng16d.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libz.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libbrotlidec.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libbrotlicommon.a
   FLAGS = -g
   LINK_FLAGS = -rdynamic
+  LINK_LIBRARIES = /VCPKG/vcpkg/installed/x64-linux/debug/lib/libSDL2maind.a  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libSDL2d.a  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libSDL2_ttf.a  -pthread  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libfreetyped.a  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libbz2d.a  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libpng16d.a  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libz.a  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libbz2d.a  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libpng16d.a  -lm  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libz.a  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libbrotlidec.a  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libbrotlicommon.a
+  LINK_PATH = -L/VCPKG/vcpkg/installed/x64-linux/debug/lib
   OBJECT_DIR = 5-RecurrentLayer/CMakeFiles/RecurrentLayer.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -410,12 +430,14 @@ build cmake_object_order_depends_target_RecurrentNeuralNetwork: phony || 6-Recur
 build 6-RecurrentNeuralNetwork/CMakeFiles/RecurrentNeuralNetwork.dir/main.o: CXX_COMPILER__RecurrentNeuralNetwork_unscanned_Debug /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/6-RecurrentNeuralNetwork/main.cpp || cmake_object_order_depends_target_RecurrentNeuralNetwork
   DEP_FILE = 6-RecurrentNeuralNetwork/CMakeFiles/RecurrentNeuralNetwork.dir/main.o.d
   FLAGS = -g -std=gnu++20
+  INCLUDES = -isystem /VCPKG/vcpkg/installed/x64-linux/include -isystem /VCPKG/vcpkg/installed/x64-linux/include/SDL2
   OBJECT_DIR = 6-RecurrentNeuralNetwork/CMakeFiles/RecurrentNeuralNetwork.dir
   OBJECT_FILE_DIR = 6-RecurrentNeuralNetwork/CMakeFiles/RecurrentNeuralNetwork.dir
 
 build 6-RecurrentNeuralNetwork/CMakeFiles/RecurrentNeuralNetwork.dir/RecurrentNeuralNetwork.o: CXX_COMPILER__RecurrentNeuralNetwork_unscanned_Debug /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/6-RecurrentNeuralNetwork/RecurrentNeuralNetwork.cpp || cmake_object_order_depends_target_RecurrentNeuralNetwork
   DEP_FILE = 6-RecurrentNeuralNetwork/CMakeFiles/RecurrentNeuralNetwork.dir/RecurrentNeuralNetwork.o.d
   FLAGS = -g -std=gnu++20
+  INCLUDES = -isystem /VCPKG/vcpkg/installed/x64-linux/include -isystem /VCPKG/vcpkg/installed/x64-linux/include/SDL2
   OBJECT_DIR = 6-RecurrentNeuralNetwork/CMakeFiles/RecurrentNeuralNetwork.dir
   OBJECT_FILE_DIR = 6-RecurrentNeuralNetwork/CMakeFiles/RecurrentNeuralNetwork.dir
 
@@ -427,9 +449,11 @@ build 6-RecurrentNeuralNetwork/CMakeFiles/RecurrentNeuralNetwork.dir/RecurrentNe
 #############################################
 # Link the executable 6-RecurrentNeuralNetwork/RecurrentNeuralNetwork
 
-build 6-RecurrentNeuralNetwork/RecurrentNeuralNetwork: CXX_EXECUTABLE_LINKER__RecurrentNeuralNetwork_Debug 6-RecurrentNeuralNetwork/CMakeFiles/RecurrentNeuralNetwork.dir/main.o 6-RecurrentNeuralNetwork/CMakeFiles/RecurrentNeuralNetwork.dir/RecurrentNeuralNetwork.o
+build 6-RecurrentNeuralNetwork/RecurrentNeuralNetwork: CXX_EXECUTABLE_LINKER__RecurrentNeuralNetwork_Debug 6-RecurrentNeuralNetwork/CMakeFiles/RecurrentNeuralNetwork.dir/main.o 6-RecurrentNeuralNetwork/CMakeFiles/RecurrentNeuralNetwork.dir/RecurrentNeuralNetwork.o | /VCPKG/vcpkg/installed/x64-linux/debug/lib/libSDL2maind.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libSDL2d.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libSDL2_ttf.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libfreetyped.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libbz2d.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libpng16d.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libz.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libbz2d.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libpng16d.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libz.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libbrotlidec.a /VCPKG/vcpkg/installed/x64-linux/debug/lib/libbrotlicommon.a
   FLAGS = -g
   LINK_FLAGS = -rdynamic
+  LINK_LIBRARIES = /VCPKG/vcpkg/installed/x64-linux/debug/lib/libSDL2maind.a  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libSDL2d.a  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libSDL2_ttf.a  -pthread  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libfreetyped.a  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libbz2d.a  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libpng16d.a  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libz.a  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libbz2d.a  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libpng16d.a  -lm  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libz.a  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libbrotlidec.a  /VCPKG/vcpkg/installed/x64-linux/debug/lib/libbrotlicommon.a
+  LINK_PATH = -L/VCPKG/vcpkg/installed/x64-linux/debug/lib
   OBJECT_DIR = 6-RecurrentNeuralNetwork/CMakeFiles/RecurrentNeuralNetwork.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -464,423 +488,71 @@ build 6-RecurrentNeuralNetwork/rebuild_cache: phony 6-RecurrentNeuralNetwork/CMa
 # /home/trevor/Desktop/Echotones/Software/ML Implimentations/CMakeLists.txt
 # =============================================================================
 
-
-#############################################
-# Utility command for edit_cache
-
-build 7-2DConvolution/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/home/trevor/Desktop/Echotones/Software/ML Implimentations/build/7-2DConvolution" && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-  DESC = No interactive CMake dialog available...
-  restat = 1
-
-build 7-2DConvolution/edit_cache: phony 7-2DConvolution/CMakeFiles/edit_cache.util
+# =============================================================================
+# Object build statements for EXECUTABLE target 2DValidConvolutionLayer
 
 
 #############################################
-# Utility command for rebuild_cache
+# Order-only phony target for 2DValidConvolutionLayer
 
-build 7-2DConvolution/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/home/trevor/Desktop/Echotones/Software/ML Implimentations/build/7-2DConvolution" && /usr/bin/cmake --regenerate-during-build -S"/home/trevor/Desktop/Echotones/Software/ML Implimentations" -B"/home/trevor/Desktop/Echotones/Software/ML Implimentations/build"
-  DESC = Running CMake to regenerate build system...
-  pool = console
-  restat = 1
+build cmake_object_order_depends_target_2DValidConvolutionLayer: phony || 7-2DValidConvolutionLayer/CMakeFiles/2DValidConvolutionLayer.dir
 
-build 7-2DConvolution/rebuild_cache: phony 7-2DConvolution/CMakeFiles/rebuild_cache.util
+build 7-2DValidConvolutionLayer/CMakeFiles/2DValidConvolutionLayer.dir/main.o: CXX_COMPILER__2DValidConvolutionLayer_unscanned_Debug /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/7-2DValidConvolutionLayer/main.cpp || cmake_object_order_depends_target_2DValidConvolutionLayer
+  DEP_FILE = 7-2DValidConvolutionLayer/CMakeFiles/2DValidConvolutionLayer.dir/main.o.d
+  FLAGS = -g -std=gnu++20
+  OBJECT_DIR = 7-2DValidConvolutionLayer/CMakeFiles/2DValidConvolutionLayer.dir
+  OBJECT_FILE_DIR = 7-2DValidConvolutionLayer/CMakeFiles/2DValidConvolutionLayer.dir
+
+build 7-2DValidConvolutionLayer/CMakeFiles/2DValidConvolutionLayer.dir/2DValidConvolutionLayer.o: CXX_COMPILER__2DValidConvolutionLayer_unscanned_Debug /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/7-2DValidConvolutionLayer/2DValidConvolutionLayer.cpp || cmake_object_order_depends_target_2DValidConvolutionLayer
+  DEP_FILE = 7-2DValidConvolutionLayer/CMakeFiles/2DValidConvolutionLayer.dir/2DValidConvolutionLayer.o.d
+  FLAGS = -g -std=gnu++20
+  OBJECT_DIR = 7-2DValidConvolutionLayer/CMakeFiles/2DValidConvolutionLayer.dir
+  OBJECT_FILE_DIR = 7-2DValidConvolutionLayer/CMakeFiles/2DValidConvolutionLayer.dir
+
 
 # =============================================================================
-# Write statements declared in CMakeLists.txt:
-# /home/trevor/Desktop/Echotones/Software/ML Implimentations/CMakeLists.txt
-# =============================================================================
+# Link build statements for EXECUTABLE target 2DValidConvolutionLayer
 
 
 #############################################
-# Utility command for edit_cache
+# Link the executable 7-2DValidConvolutionLayer/2DValidConvolutionLayer
 
-build 8-2DConvolutionLayer/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/home/trevor/Desktop/Echotones/Software/ML Implimentations/build/8-2DConvolutionLayer" && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-  DESC = No interactive CMake dialog available...
-  restat = 1
-
-build 8-2DConvolutionLayer/edit_cache: phony 8-2DConvolutionLayer/CMakeFiles/edit_cache.util
-
-
-#############################################
-# Utility command for rebuild_cache
-
-build 8-2DConvolutionLayer/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/home/trevor/Desktop/Echotones/Software/ML Implimentations/build/8-2DConvolutionLayer" && /usr/bin/cmake --regenerate-during-build -S"/home/trevor/Desktop/Echotones/Software/ML Implimentations" -B"/home/trevor/Desktop/Echotones/Software/ML Implimentations/build"
-  DESC = Running CMake to regenerate build system...
-  pool = console
-  restat = 1
-
-build 8-2DConvolutionLayer/rebuild_cache: phony 8-2DConvolutionLayer/CMakeFiles/rebuild_cache.util
-
-# =============================================================================
-# Write statements declared in CMakeLists.txt:
-# /home/trevor/Desktop/Echotones/Software/ML Implimentations/CMakeLists.txt
-# =============================================================================
+build 7-2DValidConvolutionLayer/2DValidConvolutionLayer: CXX_EXECUTABLE_LINKER__2DValidConvolutionLayer_Debug 7-2DValidConvolutionLayer/CMakeFiles/2DValidConvolutionLayer.dir/main.o 7-2DValidConvolutionLayer/CMakeFiles/2DValidConvolutionLayer.dir/2DValidConvolutionLayer.o
+  FLAGS = -g
+  LINK_FLAGS = -rdynamic
+  OBJECT_DIR = 7-2DValidConvolutionLayer/CMakeFiles/2DValidConvolutionLayer.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = 7-2DValidConvolutionLayer/2DValidConvolutionLayer
+  TARGET_PDB = 2DValidConvolutionLayer.dbg
 
 
 #############################################
 # Utility command for edit_cache
 
-build 9-2DConvolutionNeuralNetwork/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/home/trevor/Desktop/Echotones/Software/ML Implimentations/build/9-2DConvolutionNeuralNetwork" && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+build 7-2DValidConvolutionLayer/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/home/trevor/Desktop/Echotones/Software/ML Implimentations/build/7-2DValidConvolutionLayer" && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
-build 9-2DConvolutionNeuralNetwork/edit_cache: phony 9-2DConvolutionNeuralNetwork/CMakeFiles/edit_cache.util
+build 7-2DValidConvolutionLayer/edit_cache: phony 7-2DValidConvolutionLayer/CMakeFiles/edit_cache.util
 
 
 #############################################
 # Utility command for rebuild_cache
 
-build 9-2DConvolutionNeuralNetwork/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/home/trevor/Desktop/Echotones/Software/ML Implimentations/build/9-2DConvolutionNeuralNetwork" && /usr/bin/cmake --regenerate-during-build -S"/home/trevor/Desktop/Echotones/Software/ML Implimentations" -B"/home/trevor/Desktop/Echotones/Software/ML Implimentations/build"
+build 7-2DValidConvolutionLayer/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/home/trevor/Desktop/Echotones/Software/ML Implimentations/build/7-2DValidConvolutionLayer" && /usr/bin/cmake --regenerate-during-build -S"/home/trevor/Desktop/Echotones/Software/ML Implimentations" -B"/home/trevor/Desktop/Echotones/Software/ML Implimentations/build"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
 
-build 9-2DConvolutionNeuralNetwork/rebuild_cache: phony 9-2DConvolutionNeuralNetwork/CMakeFiles/rebuild_cache.util
-
-# =============================================================================
-# Write statements declared in CMakeLists.txt:
-# /home/trevor/Desktop/Echotones/Software/ML Implimentations/CMakeLists.txt
-# =============================================================================
-
-
-#############################################
-# Utility command for edit_cache
-
-build 10-3DConvolution/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/home/trevor/Desktop/Echotones/Software/ML Implimentations/build/10-3DConvolution" && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-  DESC = No interactive CMake dialog available...
-  restat = 1
-
-build 10-3DConvolution/edit_cache: phony 10-3DConvolution/CMakeFiles/edit_cache.util
-
-
-#############################################
-# Utility command for rebuild_cache
-
-build 10-3DConvolution/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/home/trevor/Desktop/Echotones/Software/ML Implimentations/build/10-3DConvolution" && /usr/bin/cmake --regenerate-during-build -S"/home/trevor/Desktop/Echotones/Software/ML Implimentations" -B"/home/trevor/Desktop/Echotones/Software/ML Implimentations/build"
-  DESC = Running CMake to regenerate build system...
-  pool = console
-  restat = 1
-
-build 10-3DConvolution/rebuild_cache: phony 10-3DConvolution/CMakeFiles/rebuild_cache.util
-
-# =============================================================================
-# Write statements declared in CMakeLists.txt:
-# /home/trevor/Desktop/Echotones/Software/ML Implimentations/CMakeLists.txt
-# =============================================================================
-
-
-#############################################
-# Utility command for edit_cache
-
-build 11-3DConvolutionLayer/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/home/trevor/Desktop/Echotones/Software/ML Implimentations/build/11-3DConvolutionLayer" && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-  DESC = No interactive CMake dialog available...
-  restat = 1
-
-build 11-3DConvolutionLayer/edit_cache: phony 11-3DConvolutionLayer/CMakeFiles/edit_cache.util
-
-
-#############################################
-# Utility command for rebuild_cache
-
-build 11-3DConvolutionLayer/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/home/trevor/Desktop/Echotones/Software/ML Implimentations/build/11-3DConvolutionLayer" && /usr/bin/cmake --regenerate-during-build -S"/home/trevor/Desktop/Echotones/Software/ML Implimentations" -B"/home/trevor/Desktop/Echotones/Software/ML Implimentations/build"
-  DESC = Running CMake to regenerate build system...
-  pool = console
-  restat = 1
-
-build 11-3DConvolutionLayer/rebuild_cache: phony 11-3DConvolutionLayer/CMakeFiles/rebuild_cache.util
-
-# =============================================================================
-# Write statements declared in CMakeLists.txt:
-# /home/trevor/Desktop/Echotones/Software/ML Implimentations/CMakeLists.txt
-# =============================================================================
-
-
-#############################################
-# Utility command for edit_cache
-
-build 12-3DConvolutionNeuralNetwork/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/home/trevor/Desktop/Echotones/Software/ML Implimentations/build/12-3DConvolutionNeuralNetwork" && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-  DESC = No interactive CMake dialog available...
-  restat = 1
-
-build 12-3DConvolutionNeuralNetwork/edit_cache: phony 12-3DConvolutionNeuralNetwork/CMakeFiles/edit_cache.util
-
-
-#############################################
-# Utility command for rebuild_cache
-
-build 12-3DConvolutionNeuralNetwork/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/home/trevor/Desktop/Echotones/Software/ML Implimentations/build/12-3DConvolutionNeuralNetwork" && /usr/bin/cmake --regenerate-during-build -S"/home/trevor/Desktop/Echotones/Software/ML Implimentations" -B"/home/trevor/Desktop/Echotones/Software/ML Implimentations/build"
-  DESC = Running CMake to regenerate build system...
-  pool = console
-  restat = 1
-
-build 12-3DConvolutionNeuralNetwork/rebuild_cache: phony 12-3DConvolutionNeuralNetwork/CMakeFiles/rebuild_cache.util
-
-# =============================================================================
-# Write statements declared in CMakeLists.txt:
-# /home/trevor/Desktop/Echotones/Software/ML Implimentations/CMakeLists.txt
-# =============================================================================
-
-
-#############################################
-# Utility command for edit_cache
-
-build 13-2DRecurrentConvolution/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/home/trevor/Desktop/Echotones/Software/ML Implimentations/build/13-2DRecurrentConvolution" && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-  DESC = No interactive CMake dialog available...
-  restat = 1
-
-build 13-2DRecurrentConvolution/edit_cache: phony 13-2DRecurrentConvolution/CMakeFiles/edit_cache.util
-
-
-#############################################
-# Utility command for rebuild_cache
-
-build 13-2DRecurrentConvolution/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/home/trevor/Desktop/Echotones/Software/ML Implimentations/build/13-2DRecurrentConvolution" && /usr/bin/cmake --regenerate-during-build -S"/home/trevor/Desktop/Echotones/Software/ML Implimentations" -B"/home/trevor/Desktop/Echotones/Software/ML Implimentations/build"
-  DESC = Running CMake to regenerate build system...
-  pool = console
-  restat = 1
-
-build 13-2DRecurrentConvolution/rebuild_cache: phony 13-2DRecurrentConvolution/CMakeFiles/rebuild_cache.util
-
-# =============================================================================
-# Write statements declared in CMakeLists.txt:
-# /home/trevor/Desktop/Echotones/Software/ML Implimentations/CMakeLists.txt
-# =============================================================================
-
-
-#############################################
-# Utility command for edit_cache
-
-build 14-2DRecurrentConvolutionLayer/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/home/trevor/Desktop/Echotones/Software/ML Implimentations/build/14-2DRecurrentConvolutionLayer" && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-  DESC = No interactive CMake dialog available...
-  restat = 1
-
-build 14-2DRecurrentConvolutionLayer/edit_cache: phony 14-2DRecurrentConvolutionLayer/CMakeFiles/edit_cache.util
-
-
-#############################################
-# Utility command for rebuild_cache
-
-build 14-2DRecurrentConvolutionLayer/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/home/trevor/Desktop/Echotones/Software/ML Implimentations/build/14-2DRecurrentConvolutionLayer" && /usr/bin/cmake --regenerate-during-build -S"/home/trevor/Desktop/Echotones/Software/ML Implimentations" -B"/home/trevor/Desktop/Echotones/Software/ML Implimentations/build"
-  DESC = Running CMake to regenerate build system...
-  pool = console
-  restat = 1
-
-build 14-2DRecurrentConvolutionLayer/rebuild_cache: phony 14-2DRecurrentConvolutionLayer/CMakeFiles/rebuild_cache.util
-
-# =============================================================================
-# Write statements declared in CMakeLists.txt:
-# /home/trevor/Desktop/Echotones/Software/ML Implimentations/CMakeLists.txt
-# =============================================================================
-
-
-#############################################
-# Utility command for edit_cache
-
-build 15-2DRecurrentConvolutionNeuralNetwork/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/home/trevor/Desktop/Echotones/Software/ML Implimentations/build/15-2DRecurrentConvolutionNeuralNetwork" && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-  DESC = No interactive CMake dialog available...
-  restat = 1
-
-build 15-2DRecurrentConvolutionNeuralNetwork/edit_cache: phony 15-2DRecurrentConvolutionNeuralNetwork/CMakeFiles/edit_cache.util
-
-
-#############################################
-# Utility command for rebuild_cache
-
-build 15-2DRecurrentConvolutionNeuralNetwork/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/home/trevor/Desktop/Echotones/Software/ML Implimentations/build/15-2DRecurrentConvolutionNeuralNetwork" && /usr/bin/cmake --regenerate-during-build -S"/home/trevor/Desktop/Echotones/Software/ML Implimentations" -B"/home/trevor/Desktop/Echotones/Software/ML Implimentations/build"
-  DESC = Running CMake to regenerate build system...
-  pool = console
-  restat = 1
-
-build 15-2DRecurrentConvolutionNeuralNetwork/rebuild_cache: phony 15-2DRecurrentConvolutionNeuralNetwork/CMakeFiles/rebuild_cache.util
-
-# =============================================================================
-# Write statements declared in CMakeLists.txt:
-# /home/trevor/Desktop/Echotones/Software/ML Implimentations/CMakeLists.txt
-# =============================================================================
-
-
-#############################################
-# Utility command for edit_cache
-
-build 16-3DRecurrentConvolution/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/home/trevor/Desktop/Echotones/Software/ML Implimentations/build/16-3DRecurrentConvolution" && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-  DESC = No interactive CMake dialog available...
-  restat = 1
-
-build 16-3DRecurrentConvolution/edit_cache: phony 16-3DRecurrentConvolution/CMakeFiles/edit_cache.util
-
-
-#############################################
-# Utility command for rebuild_cache
-
-build 16-3DRecurrentConvolution/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/home/trevor/Desktop/Echotones/Software/ML Implimentations/build/16-3DRecurrentConvolution" && /usr/bin/cmake --regenerate-during-build -S"/home/trevor/Desktop/Echotones/Software/ML Implimentations" -B"/home/trevor/Desktop/Echotones/Software/ML Implimentations/build"
-  DESC = Running CMake to regenerate build system...
-  pool = console
-  restat = 1
-
-build 16-3DRecurrentConvolution/rebuild_cache: phony 16-3DRecurrentConvolution/CMakeFiles/rebuild_cache.util
-
-# =============================================================================
-# Write statements declared in CMakeLists.txt:
-# /home/trevor/Desktop/Echotones/Software/ML Implimentations/CMakeLists.txt
-# =============================================================================
-
-
-#############################################
-# Utility command for edit_cache
-
-build 17-3DRecurrentConvolutionLayer/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/home/trevor/Desktop/Echotones/Software/ML Implimentations/build/17-3DRecurrentConvolutionLayer" && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-  DESC = No interactive CMake dialog available...
-  restat = 1
-
-build 17-3DRecurrentConvolutionLayer/edit_cache: phony 17-3DRecurrentConvolutionLayer/CMakeFiles/edit_cache.util
-
-
-#############################################
-# Utility command for rebuild_cache
-
-build 17-3DRecurrentConvolutionLayer/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/home/trevor/Desktop/Echotones/Software/ML Implimentations/build/17-3DRecurrentConvolutionLayer" && /usr/bin/cmake --regenerate-during-build -S"/home/trevor/Desktop/Echotones/Software/ML Implimentations" -B"/home/trevor/Desktop/Echotones/Software/ML Implimentations/build"
-  DESC = Running CMake to regenerate build system...
-  pool = console
-  restat = 1
-
-build 17-3DRecurrentConvolutionLayer/rebuild_cache: phony 17-3DRecurrentConvolutionLayer/CMakeFiles/rebuild_cache.util
-
-# =============================================================================
-# Write statements declared in CMakeLists.txt:
-# /home/trevor/Desktop/Echotones/Software/ML Implimentations/CMakeLists.txt
-# =============================================================================
-
-
-#############################################
-# Utility command for edit_cache
-
-build 18-3DRecurrentConvolutionNeuralNetwork/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/home/trevor/Desktop/Echotones/Software/ML Implimentations/build/18-3DRecurrentConvolutionNeuralNetwork" && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-  DESC = No interactive CMake dialog available...
-  restat = 1
-
-build 18-3DRecurrentConvolutionNeuralNetwork/edit_cache: phony 18-3DRecurrentConvolutionNeuralNetwork/CMakeFiles/edit_cache.util
-
-
-#############################################
-# Utility command for rebuild_cache
-
-build 18-3DRecurrentConvolutionNeuralNetwork/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/home/trevor/Desktop/Echotones/Software/ML Implimentations/build/18-3DRecurrentConvolutionNeuralNetwork" && /usr/bin/cmake --regenerate-during-build -S"/home/trevor/Desktop/Echotones/Software/ML Implimentations" -B"/home/trevor/Desktop/Echotones/Software/ML Implimentations/build"
-  DESC = Running CMake to regenerate build system...
-  pool = console
-  restat = 1
-
-build 18-3DRecurrentConvolutionNeuralNetwork/rebuild_cache: phony 18-3DRecurrentConvolutionNeuralNetwork/CMakeFiles/rebuild_cache.util
-
-# =============================================================================
-# Write statements declared in CMakeLists.txt:
-# /home/trevor/Desktop/Echotones/Software/ML Implimentations/CMakeLists.txt
-# =============================================================================
-
-
-#############################################
-# Utility command for edit_cache
-
-build 19-PositionalEncoding/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/home/trevor/Desktop/Echotones/Software/ML Implimentations/build/19-PositionalEncoding" && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-  DESC = No interactive CMake dialog available...
-  restat = 1
-
-build 19-PositionalEncoding/edit_cache: phony 19-PositionalEncoding/CMakeFiles/edit_cache.util
-
-
-#############################################
-# Utility command for rebuild_cache
-
-build 19-PositionalEncoding/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/home/trevor/Desktop/Echotones/Software/ML Implimentations/build/19-PositionalEncoding" && /usr/bin/cmake --regenerate-during-build -S"/home/trevor/Desktop/Echotones/Software/ML Implimentations" -B"/home/trevor/Desktop/Echotones/Software/ML Implimentations/build"
-  DESC = Running CMake to regenerate build system...
-  pool = console
-  restat = 1
-
-build 19-PositionalEncoding/rebuild_cache: phony 19-PositionalEncoding/CMakeFiles/rebuild_cache.util
-
-# =============================================================================
-# Write statements declared in CMakeLists.txt:
-# /home/trevor/Desktop/Echotones/Software/ML Implimentations/CMakeLists.txt
-# =============================================================================
-
-
-#############################################
-# Utility command for edit_cache
-
-build 20-MultiHeadAttention/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/home/trevor/Desktop/Echotones/Software/ML Implimentations/build/20-MultiHeadAttention" && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-  DESC = No interactive CMake dialog available...
-  restat = 1
-
-build 20-MultiHeadAttention/edit_cache: phony 20-MultiHeadAttention/CMakeFiles/edit_cache.util
-
-
-#############################################
-# Utility command for rebuild_cache
-
-build 20-MultiHeadAttention/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/home/trevor/Desktop/Echotones/Software/ML Implimentations/build/20-MultiHeadAttention" && /usr/bin/cmake --regenerate-during-build -S"/home/trevor/Desktop/Echotones/Software/ML Implimentations" -B"/home/trevor/Desktop/Echotones/Software/ML Implimentations/build"
-  DESC = Running CMake to regenerate build system...
-  pool = console
-  restat = 1
-
-build 20-MultiHeadAttention/rebuild_cache: phony 20-MultiHeadAttention/CMakeFiles/rebuild_cache.util
-
-# =============================================================================
-# Write statements declared in CMakeLists.txt:
-# /home/trevor/Desktop/Echotones/Software/ML Implimentations/CMakeLists.txt
-# =============================================================================
-
-
-#############################################
-# Utility command for edit_cache
-
-build 21-Transformer/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/home/trevor/Desktop/Echotones/Software/ML Implimentations/build/21-Transformer" && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-  DESC = No interactive CMake dialog available...
-  restat = 1
-
-build 21-Transformer/edit_cache: phony 21-Transformer/CMakeFiles/edit_cache.util
-
-
-#############################################
-# Utility command for rebuild_cache
-
-build 21-Transformer/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/home/trevor/Desktop/Echotones/Software/ML Implimentations/build/21-Transformer" && /usr/bin/cmake --regenerate-during-build -S"/home/trevor/Desktop/Echotones/Software/ML Implimentations" -B"/home/trevor/Desktop/Echotones/Software/ML Implimentations/build"
-  DESC = Running CMake to regenerate build system...
-  pool = console
-  restat = 1
-
-build 21-Transformer/rebuild_cache: phony 21-Transformer/CMakeFiles/rebuild_cache.util
+build 7-2DValidConvolutionLayer/rebuild_cache: phony 7-2DValidConvolutionLayer/CMakeFiles/rebuild_cache.util
 
 # =============================================================================
 # Target aliases.
+
+build 2DValidConvolutionLayer: phony 7-2DValidConvolutionLayer/2DValidConvolutionLayer
 
 build DeepNeuralNetwork: phony 3-DeepNeuralNetwork/DeepNeuralNetwork
 
@@ -902,7 +574,7 @@ build RecurrentPerceptron: phony 4-RecurrentPerceptron/RecurrentPerceptron
 #############################################
 # Folder: /home/trevor/Desktop/Echotones/Software/ML Implimentations/build
 
-build all: phony 1-Perceptron/all 2-PerceptronLayer/all 3-DeepNeuralNetwork/all 4-RecurrentPerceptron/all 5-RecurrentLayer/all 6-RecurrentNeuralNetwork/all 7-2DConvolution/all 8-2DConvolutionLayer/all 9-2DConvolutionNeuralNetwork/all 10-3DConvolution/all 11-3DConvolutionLayer/all 12-3DConvolutionNeuralNetwork/all 13-2DRecurrentConvolution/all 14-2DRecurrentConvolutionLayer/all 15-2DRecurrentConvolutionNeuralNetwork/all 16-3DRecurrentConvolution/all 17-3DRecurrentConvolutionLayer/all 18-3DRecurrentConvolutionNeuralNetwork/all 19-PositionalEncoding/all 20-MultiHeadAttention/all 21-Transformer/all
+build all: phony 1-Perceptron/all 2-PerceptronLayer/all 3-DeepNeuralNetwork/all 4-RecurrentPerceptron/all 5-RecurrentLayer/all 6-RecurrentNeuralNetwork/all 7-2DValidConvolutionLayer/all
 
 # =============================================================================
 
@@ -914,93 +586,9 @@ build 1-Perceptron/all: phony 1-Perceptron/Perceptron
 # =============================================================================
 
 #############################################
-# Folder: /home/trevor/Desktop/Echotones/Software/ML Implimentations/build/10-3DConvolution
-
-build 10-3DConvolution/all: phony
-
-# =============================================================================
-
-#############################################
-# Folder: /home/trevor/Desktop/Echotones/Software/ML Implimentations/build/11-3DConvolutionLayer
-
-build 11-3DConvolutionLayer/all: phony
-
-# =============================================================================
-
-#############################################
-# Folder: /home/trevor/Desktop/Echotones/Software/ML Implimentations/build/12-3DConvolutionNeuralNetwork
-
-build 12-3DConvolutionNeuralNetwork/all: phony
-
-# =============================================================================
-
-#############################################
-# Folder: /home/trevor/Desktop/Echotones/Software/ML Implimentations/build/13-2DRecurrentConvolution
-
-build 13-2DRecurrentConvolution/all: phony
-
-# =============================================================================
-
-#############################################
-# Folder: /home/trevor/Desktop/Echotones/Software/ML Implimentations/build/14-2DRecurrentConvolutionLayer
-
-build 14-2DRecurrentConvolutionLayer/all: phony
-
-# =============================================================================
-
-#############################################
-# Folder: /home/trevor/Desktop/Echotones/Software/ML Implimentations/build/15-2DRecurrentConvolutionNeuralNetwork
-
-build 15-2DRecurrentConvolutionNeuralNetwork/all: phony
-
-# =============================================================================
-
-#############################################
-# Folder: /home/trevor/Desktop/Echotones/Software/ML Implimentations/build/16-3DRecurrentConvolution
-
-build 16-3DRecurrentConvolution/all: phony
-
-# =============================================================================
-
-#############################################
-# Folder: /home/trevor/Desktop/Echotones/Software/ML Implimentations/build/17-3DRecurrentConvolutionLayer
-
-build 17-3DRecurrentConvolutionLayer/all: phony
-
-# =============================================================================
-
-#############################################
-# Folder: /home/trevor/Desktop/Echotones/Software/ML Implimentations/build/18-3DRecurrentConvolutionNeuralNetwork
-
-build 18-3DRecurrentConvolutionNeuralNetwork/all: phony
-
-# =============================================================================
-
-#############################################
-# Folder: /home/trevor/Desktop/Echotones/Software/ML Implimentations/build/19-PositionalEncoding
-
-build 19-PositionalEncoding/all: phony
-
-# =============================================================================
-
-#############################################
 # Folder: /home/trevor/Desktop/Echotones/Software/ML Implimentations/build/2-PerceptronLayer
 
 build 2-PerceptronLayer/all: phony 2-PerceptronLayer/PerceptronLayer
-
-# =============================================================================
-
-#############################################
-# Folder: /home/trevor/Desktop/Echotones/Software/ML Implimentations/build/20-MultiHeadAttention
-
-build 20-MultiHeadAttention/all: phony
-
-# =============================================================================
-
-#############################################
-# Folder: /home/trevor/Desktop/Echotones/Software/ML Implimentations/build/21-Transformer
-
-build 21-Transformer/all: phony
 
 # =============================================================================
 
@@ -1033,23 +621,9 @@ build 6-RecurrentNeuralNetwork/all: phony 6-RecurrentNeuralNetwork/RecurrentNeur
 # =============================================================================
 
 #############################################
-# Folder: /home/trevor/Desktop/Echotones/Software/ML Implimentations/build/7-2DConvolution
+# Folder: /home/trevor/Desktop/Echotones/Software/ML Implimentations/build/7-2DValidConvolutionLayer
 
-build 7-2DConvolution/all: phony
-
-# =============================================================================
-
-#############################################
-# Folder: /home/trevor/Desktop/Echotones/Software/ML Implimentations/build/8-2DConvolutionLayer
-
-build 8-2DConvolutionLayer/all: phony
-
-# =============================================================================
-
-#############################################
-# Folder: /home/trevor/Desktop/Echotones/Software/ML Implimentations/build/9-2DConvolutionNeuralNetwork
-
-build 9-2DConvolutionNeuralNetwork/all: phony
+build 7-2DValidConvolutionLayer/all: phony 7-2DValidConvolutionLayer/2DValidConvolutionLayer
 
 # =============================================================================
 # Unknown Build Time Dependencies.
@@ -1063,14 +637,14 @@ build 9-2DConvolutionNeuralNetwork/all: phony
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /VCPKG/vcpkg/scripts/buildsystems/vcpkg.cmake /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/1-Perceptron/CMakeLists.txt /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/10-3DConvolution/CMakeLists.txt /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/11-3DConvolutionLayer/CMakeLists.txt /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/12-3DConvolutionNeuralNetwork/CMakeLists.txt /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/13-2DRecurrentConvolution/CMakeLists.txt /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/14-2DRecurrentConvolutionLayer/CMakeLists.txt /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/15-2DRecurrentConvolutionNeuralNetwork/CMakeLists.txt /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/16-3DRecurrentConvolution/CMakeLists.txt /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/17-3DRecurrentConvolutionLayer/CMakeLists.txt /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/18-3DRecurrentConvolutionNeuralNetwork/CMakeLists.txt /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/19-PositionalEncoding/CMakeLists.txt /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/2-PerceptronLayer/CMakeLists.txt /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/20-MultiHeadAttention/CMakeLists.txt /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/21-Transformer/CMakeLists.txt /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/3-DeepNeuralNetwork/CMakeLists.txt /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/4-RecurrentPerceptron/CMakeLists.txt /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/5-RecurrentLayer/CMakeLists.txt /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/6-RecurrentNeuralNetwork/CMakeLists.txt /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/7-2DConvolution/CMakeLists.txt /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/8-2DConvolutionLayer/CMakeLists.txt /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/9-2DConvolutionNeuralNetwork/CMakeLists.txt /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/CMakeLists.txt /usr/share/cmake-3.27/Modules/CMakeCInformation.cmake /usr/share/cmake-3.27/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.27/Modules/CMakeDependentOption.cmake /usr/share/cmake-3.27/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.27/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.27/Modules/Compiler/GNU.cmake /usr/share/cmake-3.27/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.27/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.27/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.27/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake-3.27/Modules/Platform/Linux.cmake /usr/share/cmake-3.27/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.27.9/CMakeCCompiler.cmake CMakeFiles/3.27.9/CMakeCXXCompiler.cmake CMakeFiles/3.27.9/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /VCPKG/vcpkg/installed/x64-linux/share/SDL2_ttf/SDL2_ttf-static-targets-debug.cmake /VCPKG/vcpkg/installed/x64-linux/share/SDL2_ttf/SDL2_ttf-static-targets-release.cmake /VCPKG/vcpkg/installed/x64-linux/share/SDL2_ttf/SDL2_ttf-static-targets.cmake /VCPKG/vcpkg/installed/x64-linux/share/SDL2_ttf/SDL2_ttfConfig.cmake /VCPKG/vcpkg/installed/x64-linux/share/SDL2_ttf/SDL2_ttfConfigVersion.cmake /VCPKG/vcpkg/installed/x64-linux/share/freetype/freetype-config-version.cmake /VCPKG/vcpkg/installed/x64-linux/share/freetype/freetype-config.cmake /VCPKG/vcpkg/installed/x64-linux/share/freetype/freetype-targets-debug.cmake /VCPKG/vcpkg/installed/x64-linux/share/freetype/freetype-targets-release.cmake /VCPKG/vcpkg/installed/x64-linux/share/freetype/freetype-targets.cmake /VCPKG/vcpkg/installed/x64-linux/share/freetype/vcpkg-cmake-wrapper.cmake /VCPKG/vcpkg/installed/x64-linux/share/png/vcpkg-cmake-wrapper.cmake /VCPKG/vcpkg/installed/x64-linux/share/sdl2/SDL2Config.cmake /VCPKG/vcpkg/installed/x64-linux/share/sdl2/SDL2ConfigVersion.cmake /VCPKG/vcpkg/installed/x64-linux/share/sdl2/SDL2mainTargets-debug.cmake /VCPKG/vcpkg/installed/x64-linux/share/sdl2/SDL2mainTargets-release.cmake /VCPKG/vcpkg/installed/x64-linux/share/sdl2/SDL2mainTargets.cmake /VCPKG/vcpkg/installed/x64-linux/share/sdl2/SDL2staticTargets-debug.cmake /VCPKG/vcpkg/installed/x64-linux/share/sdl2/SDL2staticTargets-release.cmake /VCPKG/vcpkg/installed/x64-linux/share/sdl2/SDL2staticTargets.cmake /VCPKG/vcpkg/installed/x64-linux/share/sdl2/sdlfind.cmake /VCPKG/vcpkg/installed/x64-linux/share/zlib/vcpkg-cmake-wrapper.cmake /VCPKG/vcpkg/scripts/buildsystems/vcpkg.cmake /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/1-Perceptron/CMakeLists.txt /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/2-PerceptronLayer/CMakeLists.txt /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/3-DeepNeuralNetwork/CMakeLists.txt /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/4-RecurrentPerceptron/CMakeLists.txt /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/5-RecurrentLayer/CMakeLists.txt /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/6-RecurrentNeuralNetwork/CMakeLists.txt /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/7-2DValidConvolutionLayer/CMakeLists.txt /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/CMakeLists.txt /usr/share/cmake-3.27/Modules/CMakeCInformation.cmake /usr/share/cmake-3.27/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.27/Modules/CMakeDependentOption.cmake /usr/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake /usr/share/cmake-3.27/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.27/Modules/CMakePushCheckState.cmake /usr/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.27/Modules/CheckSymbolExists.cmake /usr/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.27/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.27/Modules/Compiler/GNU.cmake /usr/share/cmake-3.27/Modules/FeatureSummary.cmake /usr/share/cmake-3.27/Modules/FindBZip2.cmake /usr/share/cmake-3.27/Modules/FindPNG.cmake /usr/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake-3.27/Modules/FindPackageMessage.cmake /usr/share/cmake-3.27/Modules/FindZLIB.cmake /usr/share/cmake-3.27/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.27/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.27/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.27/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake-3.27/Modules/Platform/Linux.cmake /usr/share/cmake-3.27/Modules/Platform/UnixPaths.cmake /usr/share/cmake-3.27/Modules/SelectLibraryConfigurations.cmake CMakeCache.txt CMakeFiles/3.27.9/CMakeCCompiler.cmake CMakeFiles/3.27.9/CMakeCXXCompiler.cmake CMakeFiles/3.27.9/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /VCPKG/vcpkg/scripts/buildsystems/vcpkg.cmake /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/1-Perceptron/CMakeLists.txt /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/10-3DConvolution/CMakeLists.txt /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/11-3DConvolutionLayer/CMakeLists.txt /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/12-3DConvolutionNeuralNetwork/CMakeLists.txt /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/13-2DRecurrentConvolution/CMakeLists.txt /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/14-2DRecurrentConvolutionLayer/CMakeLists.txt /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/15-2DRecurrentConvolutionNeuralNetwork/CMakeLists.txt /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/16-3DRecurrentConvolution/CMakeLists.txt /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/17-3DRecurrentConvolutionLayer/CMakeLists.txt /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/18-3DRecurrentConvolutionNeuralNetwork/CMakeLists.txt /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/19-PositionalEncoding/CMakeLists.txt /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/2-PerceptronLayer/CMakeLists.txt /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/20-MultiHeadAttention/CMakeLists.txt /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/21-Transformer/CMakeLists.txt /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/3-DeepNeuralNetwork/CMakeLists.txt /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/4-RecurrentPerceptron/CMakeLists.txt /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/5-RecurrentLayer/CMakeLists.txt /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/6-RecurrentNeuralNetwork/CMakeLists.txt /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/7-2DConvolution/CMakeLists.txt /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/8-2DConvolutionLayer/CMakeLists.txt /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/9-2DConvolutionNeuralNetwork/CMakeLists.txt /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/CMakeLists.txt /usr/share/cmake-3.27/Modules/CMakeCInformation.cmake /usr/share/cmake-3.27/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.27/Modules/CMakeDependentOption.cmake /usr/share/cmake-3.27/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.27/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.27/Modules/Compiler/GNU.cmake /usr/share/cmake-3.27/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.27/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.27/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.27/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake-3.27/Modules/Platform/Linux.cmake /usr/share/cmake-3.27/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.27.9/CMakeCCompiler.cmake CMakeFiles/3.27.9/CMakeCXXCompiler.cmake CMakeFiles/3.27.9/CMakeSystem.cmake: phony
+build /VCPKG/vcpkg/installed/x64-linux/share/SDL2_ttf/SDL2_ttf-static-targets-debug.cmake /VCPKG/vcpkg/installed/x64-linux/share/SDL2_ttf/SDL2_ttf-static-targets-release.cmake /VCPKG/vcpkg/installed/x64-linux/share/SDL2_ttf/SDL2_ttf-static-targets.cmake /VCPKG/vcpkg/installed/x64-linux/share/SDL2_ttf/SDL2_ttfConfig.cmake /VCPKG/vcpkg/installed/x64-linux/share/SDL2_ttf/SDL2_ttfConfigVersion.cmake /VCPKG/vcpkg/installed/x64-linux/share/freetype/freetype-config-version.cmake /VCPKG/vcpkg/installed/x64-linux/share/freetype/freetype-config.cmake /VCPKG/vcpkg/installed/x64-linux/share/freetype/freetype-targets-debug.cmake /VCPKG/vcpkg/installed/x64-linux/share/freetype/freetype-targets-release.cmake /VCPKG/vcpkg/installed/x64-linux/share/freetype/freetype-targets.cmake /VCPKG/vcpkg/installed/x64-linux/share/freetype/vcpkg-cmake-wrapper.cmake /VCPKG/vcpkg/installed/x64-linux/share/png/vcpkg-cmake-wrapper.cmake /VCPKG/vcpkg/installed/x64-linux/share/sdl2/SDL2Config.cmake /VCPKG/vcpkg/installed/x64-linux/share/sdl2/SDL2ConfigVersion.cmake /VCPKG/vcpkg/installed/x64-linux/share/sdl2/SDL2mainTargets-debug.cmake /VCPKG/vcpkg/installed/x64-linux/share/sdl2/SDL2mainTargets-release.cmake /VCPKG/vcpkg/installed/x64-linux/share/sdl2/SDL2mainTargets.cmake /VCPKG/vcpkg/installed/x64-linux/share/sdl2/SDL2staticTargets-debug.cmake /VCPKG/vcpkg/installed/x64-linux/share/sdl2/SDL2staticTargets-release.cmake /VCPKG/vcpkg/installed/x64-linux/share/sdl2/SDL2staticTargets.cmake /VCPKG/vcpkg/installed/x64-linux/share/sdl2/sdlfind.cmake /VCPKG/vcpkg/installed/x64-linux/share/zlib/vcpkg-cmake-wrapper.cmake /VCPKG/vcpkg/scripts/buildsystems/vcpkg.cmake /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/1-Perceptron/CMakeLists.txt /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/2-PerceptronLayer/CMakeLists.txt /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/3-DeepNeuralNetwork/CMakeLists.txt /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/4-RecurrentPerceptron/CMakeLists.txt /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/5-RecurrentLayer/CMakeLists.txt /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/6-RecurrentNeuralNetwork/CMakeLists.txt /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/7-2DValidConvolutionLayer/CMakeLists.txt /home/trevor/Desktop/Echotones/Software/ML$ Implimentations/CMakeLists.txt /usr/share/cmake-3.27/Modules/CMakeCInformation.cmake /usr/share/cmake-3.27/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.27/Modules/CMakeDependentOption.cmake /usr/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake /usr/share/cmake-3.27/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.27/Modules/CMakePushCheckState.cmake /usr/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.27/Modules/CheckSymbolExists.cmake /usr/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.27/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.27/Modules/Compiler/GNU.cmake /usr/share/cmake-3.27/Modules/FeatureSummary.cmake /usr/share/cmake-3.27/Modules/FindBZip2.cmake /usr/share/cmake-3.27/Modules/FindPNG.cmake /usr/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake-3.27/Modules/FindPackageMessage.cmake /usr/share/cmake-3.27/Modules/FindZLIB.cmake /usr/share/cmake-3.27/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.27/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.27/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.27/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake-3.27/Modules/Platform/Linux.cmake /usr/share/cmake-3.27/Modules/Platform/UnixPaths.cmake /usr/share/cmake-3.27/Modules/SelectLibraryConfigurations.cmake CMakeCache.txt CMakeFiles/3.27.9/CMakeCCompiler.cmake CMakeFiles/3.27.9/CMakeCXXCompiler.cmake CMakeFiles/3.27.9/CMakeSystem.cmake: phony
 
 
 #############################################
