@@ -1,0 +1,8 @@
+build/
+build/.ninja_deps
+build/.ninja_log
+build/build.ninja
+build/CMakeCache.txt
+build/CMakeFiles/
+build/CMakeFiles/CMakeConfigureLog.yaml
+build/CMakeFiles/rules.ninja
