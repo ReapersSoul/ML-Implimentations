@@ -1,4 +1,4 @@
-# Install script for directory: /home/trevor/Desktop/Echotones/Software/ML Implimentations
+# Install script for directory: /media/trevor/49AD9A774ADB16B6/Echotones/Software/ML Implimentations
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,13 +44,15 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/trevor/Desktop/Echotones/Software/ML Implimentations/build/1-Perceptron/cmake_install.cmake")
-  include("/home/trevor/Desktop/Echotones/Software/ML Implimentations/build/2-PerceptronLayer/cmake_install.cmake")
-  include("/home/trevor/Desktop/Echotones/Software/ML Implimentations/build/3-DeepNeuralNetwork/cmake_install.cmake")
-  include("/home/trevor/Desktop/Echotones/Software/ML Implimentations/build/4-RecurrentPerceptron/cmake_install.cmake")
-  include("/home/trevor/Desktop/Echotones/Software/ML Implimentations/build/5-RecurrentLayer/cmake_install.cmake")
-  include("/home/trevor/Desktop/Echotones/Software/ML Implimentations/build/6-RecurrentNeuralNetwork/cmake_install.cmake")
-  include("/home/trevor/Desktop/Echotones/Software/ML Implimentations/build/7-2DValidConvolutionLayer/cmake_install.cmake")
+  include("/media/trevor/49AD9A774ADB16B6/Echotones/Software/ML Implimentations/build/TensorLib/cmake_install.cmake")
+  include("/media/trevor/49AD9A774ADB16B6/Echotones/Software/ML Implimentations/build/1-Perceptron/cmake_install.cmake")
+  include("/media/trevor/49AD9A774ADB16B6/Echotones/Software/ML Implimentations/build/2-PerceptronLayer/cmake_install.cmake")
+  include("/media/trevor/49AD9A774ADB16B6/Echotones/Software/ML Implimentations/build/3-DeepNeuralNetwork/cmake_install.cmake")
+  include("/media/trevor/49AD9A774ADB16B6/Echotones/Software/ML Implimentations/build/4-RecurrentPerceptron/cmake_install.cmake")
+  include("/media/trevor/49AD9A774ADB16B6/Echotones/Software/ML Implimentations/build/5-RecurrentLayer/cmake_install.cmake")
+  include("/media/trevor/49AD9A774ADB16B6/Echotones/Software/ML Implimentations/build/6-RecurrentNeuralNetwork/cmake_install.cmake")
+  include("/media/trevor/49AD9A774ADB16B6/Echotones/Software/ML Implimentations/build/7-2DValidConvolutionLayer/cmake_install.cmake")
+  include("/media/trevor/49AD9A774ADB16B6/Echotones/Software/ML Implimentations/build/8-2DFullConvolutionLayer/cmake_install.cmake")
 
 endif()
 
@@ -62,5 +64,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/trevor/Desktop/Echotones/Software/ML Implimentations/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/media/trevor/49AD9A774ADB16B6/Echotones/Software/ML Implimentations/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

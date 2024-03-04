@@ -1,0 +1,3 @@
+project(2DFullConvolutionLayer)
+
+add_executable(2DFullConvolutionLayer main.cpp 2DFullConvolutionLayer.cpp 2DFullConvolutionLayer.hpp)

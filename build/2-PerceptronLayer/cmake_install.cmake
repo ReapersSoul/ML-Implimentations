@@ -1,4 +1,4 @@
-# Install script for directory: /home/trevor/Desktop/Echotones/Software/ML Implimentations/2-PerceptronLayer
+# Install script for directory: /media/trevor/49AD9A774ADB16B6/Echotones/Software/ML Implimentations/2-PerceptronLayer
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
