@@ -20,15 +20,17 @@ std::vector<int> Tensor::getShape(){
 	return shape;
 }
 
+std::vector<double> Tensor::getData(){
+	return data;
+}
+
 Tensor Tensor::Block(std::vector<int> Start, std::vector<int> Shape){
 	//get the number of arguments
 	if(Shape.size()>shape.size()){
 		throw std::invalid_argument("The number of dimensions of the block is greater than the number of dimensions of the tensor");
 	}
-	
 	Tensor t(Shape);
 	Tensor_Block(this->data, this->shape, Start, Shape, t.data);
-
 	return t;
 }
 
@@ -40,19 +42,33 @@ Tensor Tensor::Dot(Tensor &t){
 	//TODO
 }
 
-Tensor Tensor::Conv(Tensor &t, int Stride, int Padding){
-	//TODO
+Tensor Tensor::Conv(Tensor &kernel, int Stride, int Padding){
+	std::vector<int> newShape = this->shape;
+	Tensor ret(newShape);
+
+	//use Block and MulSum to implement this
+	// for(int d = 0; d < shape.size(); d++){
+	// 	for(int i = 0; i < shape[d]; i++){
+	// 		for(int j = 0; j < shape[d+1]; j++){
+	// 			std::vector<int> start = {i,j};
+	// 			std::vector<int> shape = kernel.getShape();
+	// 			Tensor block = this->Block(start, shape);
+	// 			double sum = block.MulSum(kernel);
+	// 			this->data[posToIndex(start, this->shape, this->shape.size())] = sum;
+	// 		}
+	// 	}
+	// }
 }
 
 double Tensor::MulSum(Tensor &t){
 	double sum = 0;
-	Tensor_MulSum(this->data, t.data, sum);
+	GPU_MulSum(this->data, t.data, sum);
 	return sum;
 }
 
 double Tensor::Sum(){
 	double sum = 0;
-	Tensor_Sum(this->data, sum);
+	GPU_Sum(this->data, sum);
 	return sum;
 }
 
