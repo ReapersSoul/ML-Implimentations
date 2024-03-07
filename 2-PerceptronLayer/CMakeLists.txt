@@ -15,3 +15,6 @@ target_link_libraries(PerceptronLayer
 find_package(SDL2_ttf CONFIG REQUIRED)
 target_include_directories(PerceptronLayer PRIVATE ${SDL2_TTF_INCLUDE_DIRS})
 target_link_libraries(PerceptronLayer PRIVATE $<IF:$<TARGET_EXISTS:SDL2_ttf::SDL2_ttf>,SDL2_ttf::SDL2_ttf,SDL2_ttf::SDL2_ttf-static>)
+
+find_package(OpenCL REQUIRED)
+target_link_libraries(${PROJECT_NAME} PRIVATE OpenCL::OpenCL)

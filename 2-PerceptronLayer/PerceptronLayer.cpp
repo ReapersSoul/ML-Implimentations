@@ -21,9 +21,7 @@ std::vector<double> PerceptronLayer::Forward(std::vector<double> input) {
 	z.resize(w[0].size());
 	for (int j = 0; j < w[0].size(); j++) {
 		z[j] = 0.0;
-		for (int i = 0; i < x.size(); i++) {
-			z[j] += x[i] * w[i][j];
-		}
+		GPU_MulSum(x, w[j], z[j]);
 		z[j]+=b[j];
 	}
 	return af->Activate(z);

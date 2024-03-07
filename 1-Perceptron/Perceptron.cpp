@@ -14,22 +14,20 @@ void Perceptron::Init(int size, ActivationFunction* af, double min, double max) 
 }
 
 double Perceptron::Forward(std::vector<double> input) {
-	x=input;
-	z = 0.0;
-	for (int i = 0; i < x.size(); i++) {
-		z += x[i] * w[i];
-	}
-	z+=b;
-	return af->Activate(z);
+	double z=0;
+	GPU_MulSum(input,w,z);
+	return af->Activate(z+b);
 }
 
 std::vector<double> Perceptron::Backward(double fg, double lr) {
 	std::vector<double> dx(w.size());
 	double dz = af->Derivative(z) * fg;
-	for (int i = 0; i < w.size(); i++) {
-		dx[i]=w[i] * dz;
-		w[i]-=lr * dz * x[i];
-	}
+
+	GPU_Apply_Scalar(w,dz,dx);
+
+	std::vector<double> dw(w.size());
+	GPU_Apply_Scalar(x,lr*dz,dw);
+	GPU_Sub(w,dw,w);
 	b -= lr * dz;
 	return dx;
 }

@@ -63,10 +63,10 @@ int main() {
 	std::vector<std::vector<double>> y = { {0,1},{0,1},{0,1},{1,0} };
 
 	for (int i = 0; i < 1000000; i++) {
-		for (int j = 0; j < x.size(); j++) {
-			std::vector<double> o = p.Forward(x[j]);
-			std::vector<double> dx = p.Backward(mse.Derivative(o, y[j]), 0.01);
-		}
+		int j= rand() % 4;
+		std::vector<double> o = p.Forward(x[j]);
+		std::vector<double> dx = p.Backward(mse.Derivative(o, y[j]), 0.01);
+		
 		printf("\033[0;0H");
 
 		printf("0 AND 0 = %f,%f\tShould Be: 0,1\n", p.Forward({ 0,0 })[0],p.Forward({ 0,0 })[1]);
