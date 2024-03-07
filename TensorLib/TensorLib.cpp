@@ -43,21 +43,29 @@ Tensor Tensor::Dot(Tensor &t){
 }
 
 Tensor Tensor::Conv(Tensor &kernel, int Stride, int Padding){
-	std::vector<int> newShape = this->shape;
-	Tensor ret(newShape);
+   // Check if kernel dimensions are compatible with the tensor
+    if (kernel.getDimensions() > this->getDimensions()) {
+        throw std::invalid_argument("Kernel dimensions are greater than tensor dimensions!");
+    }
 
-	//use Block and MulSum to implement this
-	// for(int d = 0; d < shape.size(); d++){
-	// 	for(int i = 0; i < shape[d]; i++){
-	// 		for(int j = 0; j < shape[d+1]; j++){
-	// 			std::vector<int> start = {i,j};
-	// 			std::vector<int> shape = kernel.getShape();
-	// 			Tensor block = this->Block(start, shape);
-	// 			double sum = block.MulSum(kernel);
-	// 			this->data[posToIndex(start, this->shape, this->shape.size())] = sum;
-	// 		}
-	// 	}
-	// }
+    // Initialize output tensor
+    std::vector<int> outputDimensions = this->calculateOutputDimensions(kernel, Stride, Padding);
+    Tensor output(outputDimensions);
+
+    // Iterate over the tensor
+    std::vector<int> TensorPos(this->getDimensions(), 0);
+    do {
+        // Extract block from tensor
+        Tensor block = this->Block(TensorPos, kernel.shape);
+
+        // Multiply block with kernel and sum the result
+        float convResult = block.MulSum(kernel);
+
+        // Store result in output tensor
+        output.set(TensorPos, convResult);
+    } while (this->nextPosition(TensorPos, Stride));
+
+    return output;
 }
 
 double Tensor::MulSum(Tensor &t){
@@ -75,6 +83,13 @@ double Tensor::Sum(){
 void Tensor::Randomize(double min, double max){
 	for(int i = 0; i < data.size(); i++){
 		data[i] = randRange(-1,1);
+	}
+}
+
+void Tensor::MakeIndexTensor(){
+	for (int i = 0; i < data.size(); i++)
+	{
+		data[i] = i;
 	}
 }
 

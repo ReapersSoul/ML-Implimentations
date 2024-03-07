@@ -423,5 +423,6 @@ public:
 	double MulSum(Tensor &t);
 	double Sum();
 	void Randomize(double min, double max);
+	void MakeIndexTensor();
 	void Print();
 };
