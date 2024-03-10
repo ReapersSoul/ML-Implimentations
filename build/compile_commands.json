@@ -1,15 +1,15 @@
 [
 {
   "directory": "/media/trevor/49AD9A774ADB16B6/Echotones/Software/ML Implimentations/build",
-  "command": "/usr/bin/g++ -isystem /VCPKG/vcpkg/installed/x64-linux/include -g -std=gnu++20 -o TensorLib/CMakeFiles/TensorLib.dir/main.o -c \"/media/trevor/49AD9A774ADB16B6/Echotones/Software/ML Implimentations/TensorLib/main.cpp\"",
-  "file": "/media/trevor/49AD9A774ADB16B6/Echotones/Software/ML Implimentations/TensorLib/main.cpp",
-  "output": "TensorLib/CMakeFiles/TensorLib.dir/main.o"
+  "command": "/usr/bin/g++ -isystem /VCPKG/vcpkg/installed/x64-linux/include -g -std=gnu++20 -o MLLib/CMakeFiles/MLLib.dir/Src/main.o -c \"/media/trevor/49AD9A774ADB16B6/Echotones/Software/ML Implimentations/MLLib/Src/main.cpp\"",
+  "file": "/media/trevor/49AD9A774ADB16B6/Echotones/Software/ML Implimentations/MLLib/Src/main.cpp",
+  "output": "MLLib/CMakeFiles/MLLib.dir/Src/main.o"
 },
 {
   "directory": "/media/trevor/49AD9A774ADB16B6/Echotones/Software/ML Implimentations/build",
-  "command": "/usr/bin/g++ -isystem /VCPKG/vcpkg/installed/x64-linux/include -g -std=gnu++20 -o TensorLib/CMakeFiles/TensorLib.dir/TensorLib.o -c \"/media/trevor/49AD9A774ADB16B6/Echotones/Software/ML Implimentations/TensorLib/TensorLib.cpp\"",
-  "file": "/media/trevor/49AD9A774ADB16B6/Echotones/Software/ML Implimentations/TensorLib/TensorLib.cpp",
-  "output": "TensorLib/CMakeFiles/TensorLib.dir/TensorLib.o"
+  "command": "/usr/bin/g++ -isystem /VCPKG/vcpkg/installed/x64-linux/include -g -std=gnu++20 -o MLLib/CMakeFiles/MLLib.dir/Src/MLLib.o -c \"/media/trevor/49AD9A774ADB16B6/Echotones/Software/ML Implimentations/MLLib/Src/MLLib.cpp\"",
+  "file": "/media/trevor/49AD9A774ADB16B6/Echotones/Software/ML Implimentations/MLLib/Src/MLLib.cpp",
+  "output": "MLLib/CMakeFiles/MLLib.dir/Src/MLLib.o"
 },
 {
   "directory": "/media/trevor/49AD9A774ADB16B6/Echotones/Software/ML Implimentations/build",

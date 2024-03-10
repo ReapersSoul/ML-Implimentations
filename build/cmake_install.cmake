@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/media/trevor/49AD9A774ADB16B6/Echotones/Software/ML Implimentations/build/TensorLib/cmake_install.cmake")
+  include("/media/trevor/49AD9A774ADB16B6/Echotones/Software/ML Implimentations/build/MLLib/cmake_install.cmake")
   include("/media/trevor/49AD9A774ADB16B6/Echotones/Software/ML Implimentations/build/1-Perceptron/cmake_install.cmake")
   include("/media/trevor/49AD9A774ADB16B6/Echotones/Software/ML Implimentations/build/2-PerceptronLayer/cmake_install.cmake")
   include("/media/trevor/49AD9A774ADB16B6/Echotones/Software/ML Implimentations/build/3-DeepNeuralNetwork/cmake_install.cmake")

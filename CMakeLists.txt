@@ -2,7 +2,7 @@ project("MLL_Implimentations")
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_subdirectory("TensorLib")
+add_subdirectory("MLLib")
 add_subdirectory("1-Perceptron")
 add_subdirectory("2-PerceptronLayer")
 add_subdirectory("3-DeepNeuralNetwork")

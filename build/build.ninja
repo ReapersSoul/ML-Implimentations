@@ -69,69 +69,74 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 
 # =============================================================================
-# Object build statements for EXECUTABLE target TensorLib
+# Object build statements for EXECUTABLE target MLLib
 
 
 #############################################
-# Order-only phony target for TensorLib
+# Order-only phony target for MLLib
 
-build cmake_object_order_depends_target_TensorLib: phony || TensorLib/CMakeFiles/TensorLib.dir
+build cmake_object_order_depends_target_MLLib: phony || MLLib/CMakeFiles/MLLib.dir
 
-build TensorLib/CMakeFiles/TensorLib.dir/main.o: CXX_COMPILER__TensorLib_unscanned_Debug /media/trevor/49AD9A774ADB16B6/Echotones/Software/ML$ Implimentations/TensorLib/main.cpp || cmake_object_order_depends_target_TensorLib
-  DEP_FILE = TensorLib/CMakeFiles/TensorLib.dir/main.o.d
+build MLLib/CMakeFiles/MLLib.dir/Src/main.o: CXX_COMPILER__MLLib_unscanned_Debug /media/trevor/49AD9A774ADB16B6/Echotones/Software/ML$ Implimentations/MLLib/Src/main.cpp || cmake_object_order_depends_target_MLLib
+  DEP_FILE = MLLib/CMakeFiles/MLLib.dir/Src/main.o.d
   FLAGS = -g -std=gnu++20
   INCLUDES = -isystem /VCPKG/vcpkg/installed/x64-linux/include
-  OBJECT_DIR = TensorLib/CMakeFiles/TensorLib.dir
-  OBJECT_FILE_DIR = TensorLib/CMakeFiles/TensorLib.dir
+  OBJECT_DIR = MLLib/CMakeFiles/MLLib.dir
+  OBJECT_FILE_DIR = MLLib/CMakeFiles/MLLib.dir/Src
+  TARGET_COMPILE_PDB = MLLib/CMakeFiles/MLLib.dir/
+  TARGET_PDB = MLLib/MLLib.pdb
 
-build TensorLib/CMakeFiles/TensorLib.dir/TensorLib.o: CXX_COMPILER__TensorLib_unscanned_Debug /media/trevor/49AD9A774ADB16B6/Echotones/Software/ML$ Implimentations/TensorLib/TensorLib.cpp || cmake_object_order_depends_target_TensorLib
-  DEP_FILE = TensorLib/CMakeFiles/TensorLib.dir/TensorLib.o.d
+build MLLib/CMakeFiles/MLLib.dir/Src/MLLib.o: CXX_COMPILER__MLLib_unscanned_Debug /media/trevor/49AD9A774ADB16B6/Echotones/Software/ML$ Implimentations/MLLib/Src/MLLib.cpp || cmake_object_order_depends_target_MLLib
+  DEP_FILE = MLLib/CMakeFiles/MLLib.dir/Src/MLLib.o.d
   FLAGS = -g -std=gnu++20
   INCLUDES = -isystem /VCPKG/vcpkg/installed/x64-linux/include
-  OBJECT_DIR = TensorLib/CMakeFiles/TensorLib.dir
-  OBJECT_FILE_DIR = TensorLib/CMakeFiles/TensorLib.dir
+  OBJECT_DIR = MLLib/CMakeFiles/MLLib.dir
+  OBJECT_FILE_DIR = MLLib/CMakeFiles/MLLib.dir/Src
+  TARGET_COMPILE_PDB = MLLib/CMakeFiles/MLLib.dir/
+  TARGET_PDB = MLLib/MLLib.pdb
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target TensorLib
+# Link build statements for EXECUTABLE target MLLib
 
 
 #############################################
-# Link the executable TensorLib/TensorLib
+# Link the executable MLLib/MLLib
 
-build TensorLib/TensorLib: CXX_EXECUTABLE_LINKER__TensorLib_Debug TensorLib/CMakeFiles/TensorLib.dir/main.o TensorLib/CMakeFiles/TensorLib.dir/TensorLib.o | /VCPKG/vcpkg/installed/x64-linux/debug/lib/libOpenCL.a
+build MLLib/MLLib: CXX_EXECUTABLE_LINKER__MLLib_Debug MLLib/CMakeFiles/MLLib.dir/Src/main.o MLLib/CMakeFiles/MLLib.dir/Src/MLLib.o | /VCPKG/vcpkg/installed/x64-linux/debug/lib/libOpenCL.a
   FLAGS = -g
   LINK_FLAGS = -rdynamic
   LINK_LIBRARIES = /VCPKG/vcpkg/installed/x64-linux/debug/lib/libOpenCL.a  -ldl
   LINK_PATH = -L/VCPKG/vcpkg/installed/x64-linux/debug/lib
-  OBJECT_DIR = TensorLib/CMakeFiles/TensorLib.dir
+  OBJECT_DIR = MLLib/CMakeFiles/MLLib.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = TensorLib/TensorLib
-  TARGET_PDB = TensorLib.dbg
+  TARGET_COMPILE_PDB = MLLib/CMakeFiles/MLLib.dir/
+  TARGET_FILE = MLLib/MLLib
+  TARGET_PDB = MLLib/MLLib.pdb
 
 
 #############################################
 # Utility command for edit_cache
 
-build TensorLib/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/media/trevor/49AD9A774ADB16B6/Echotones/Software/ML Implimentations/build/TensorLib" && /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+build MLLib/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/media/trevor/49AD9A774ADB16B6/Echotones/Software/ML Implimentations/build/MLLib" && /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
-build TensorLib/edit_cache: phony TensorLib/CMakeFiles/edit_cache.util
+build MLLib/edit_cache: phony MLLib/CMakeFiles/edit_cache.util
 
 
 #############################################
 # Utility command for rebuild_cache
 
-build TensorLib/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd "/media/trevor/49AD9A774ADB16B6/Echotones/Software/ML Implimentations/build/TensorLib" && /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/bin/cmake --regenerate-during-build -S"/media/trevor/49AD9A774ADB16B6/Echotones/Software/ML Implimentations" -B"/media/trevor/49AD9A774ADB16B6/Echotones/Software/ML Implimentations/build"
+build MLLib/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/media/trevor/49AD9A774ADB16B6/Echotones/Software/ML Implimentations/build/MLLib" && /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/bin/cmake --regenerate-during-build -S"/media/trevor/49AD9A774ADB16B6/Echotones/Software/ML Implimentations" -B"/media/trevor/49AD9A774ADB16B6/Echotones/Software/ML Implimentations/build"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
 
-build TensorLib/rebuild_cache: phony TensorLib/CMakeFiles/rebuild_cache.util
+build MLLib/rebuild_cache: phony MLLib/CMakeFiles/rebuild_cache.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
@@ -153,6 +158,8 @@ build 1-Perceptron/CMakeFiles/Perceptron.dir/main.o: CXX_COMPILER__Perceptron_un
   INCLUDES = -isystem /VCPKG/vcpkg/installed/x64-linux/include -isystem /VCPKG/vcpkg/installed/x64-linux/include/SDL2
   OBJECT_DIR = 1-Perceptron/CMakeFiles/Perceptron.dir
   OBJECT_FILE_DIR = 1-Perceptron/CMakeFiles/Perceptron.dir
+  TARGET_COMPILE_PDB = 1-Perceptron/CMakeFiles/Perceptron.dir/
+  TARGET_PDB = 1-Perceptron/Perceptron.pdb
 
 build 1-Perceptron/CMakeFiles/Perceptron.dir/Perceptron.o: CXX_COMPILER__Perceptron_unscanned_Debug /media/trevor/49AD9A774ADB16B6/Echotones/Software/ML$ Implimentations/1-Perceptron/Perceptron.cpp || cmake_object_order_depends_target_Perceptron
   DEP_FILE = 1-Perceptron/CMakeFiles/Perceptron.dir/Perceptron.o.d
@@ -160,6 +167,8 @@ build 1-Perceptron/CMakeFiles/Perceptron.dir/Perceptron.o: CXX_COMPILER__Percept
   INCLUDES = -isystem /VCPKG/vcpkg/installed/x64-linux/include -isystem /VCPKG/vcpkg/installed/x64-linux/include/SDL2
   OBJECT_DIR = 1-Perceptron/CMakeFiles/Perceptron.dir
   OBJECT_FILE_DIR = 1-Perceptron/CMakeFiles/Perceptron.dir
+  TARGET_COMPILE_PDB = 1-Perceptron/CMakeFiles/Perceptron.dir/
+  TARGET_PDB = 1-Perceptron/Perceptron.pdb
 
 
 # =============================================================================
@@ -177,8 +186,9 @@ build 1-Perceptron/Perceptron: CXX_EXECUTABLE_LINKER__Perceptron_Debug 1-Percept
   OBJECT_DIR = 1-Perceptron/CMakeFiles/Perceptron.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = 1-Perceptron/CMakeFiles/Perceptron.dir/
   TARGET_FILE = 1-Perceptron/Perceptron
-  TARGET_PDB = Perceptron.dbg
+  TARGET_PDB = 1-Perceptron/Perceptron.pdb
 
 
 #############################################
@@ -223,6 +233,8 @@ build 2-PerceptronLayer/CMakeFiles/PerceptronLayer.dir/main.o: CXX_COMPILER__Per
   INCLUDES = -isystem /VCPKG/vcpkg/installed/x64-linux/include -isystem /VCPKG/vcpkg/installed/x64-linux/include/SDL2
   OBJECT_DIR = 2-PerceptronLayer/CMakeFiles/PerceptronLayer.dir
   OBJECT_FILE_DIR = 2-PerceptronLayer/CMakeFiles/PerceptronLayer.dir
+  TARGET_COMPILE_PDB = 2-PerceptronLayer/CMakeFiles/PerceptronLayer.dir/
+  TARGET_PDB = 2-PerceptronLayer/PerceptronLayer.pdb
 
 build 2-PerceptronLayer/CMakeFiles/PerceptronLayer.dir/PerceptronLayer.o: CXX_COMPILER__PerceptronLayer_unscanned_Debug /media/trevor/49AD9A774ADB16B6/Echotones/Software/ML$ Implimentations/2-PerceptronLayer/PerceptronLayer.cpp || cmake_object_order_depends_target_PerceptronLayer
   DEP_FILE = 2-PerceptronLayer/CMakeFiles/PerceptronLayer.dir/PerceptronLayer.o.d
@@ -230,6 +242,8 @@ build 2-PerceptronLayer/CMakeFiles/PerceptronLayer.dir/PerceptronLayer.o: CXX_CO
   INCLUDES = -isystem /VCPKG/vcpkg/installed/x64-linux/include -isystem /VCPKG/vcpkg/installed/x64-linux/include/SDL2
   OBJECT_DIR = 2-PerceptronLayer/CMakeFiles/PerceptronLayer.dir
   OBJECT_FILE_DIR = 2-PerceptronLayer/CMakeFiles/PerceptronLayer.dir
+  TARGET_COMPILE_PDB = 2-PerceptronLayer/CMakeFiles/PerceptronLayer.dir/
+  TARGET_PDB = 2-PerceptronLayer/PerceptronLayer.pdb
 
 
 # =============================================================================
@@ -247,8 +261,9 @@ build 2-PerceptronLayer/PerceptronLayer: CXX_EXECUTABLE_LINKER__PerceptronLayer_
   OBJECT_DIR = 2-PerceptronLayer/CMakeFiles/PerceptronLayer.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = 2-PerceptronLayer/CMakeFiles/PerceptronLayer.dir/
   TARGET_FILE = 2-PerceptronLayer/PerceptronLayer
-  TARGET_PDB = PerceptronLayer.dbg
+  TARGET_PDB = 2-PerceptronLayer/PerceptronLayer.pdb
 
 
 #############################################
@@ -293,6 +308,8 @@ build 3-DeepNeuralNetwork/CMakeFiles/DeepNeuralNetwork.dir/main.o: CXX_COMPILER_
   INCLUDES = -isystem /VCPKG/vcpkg/installed/x64-linux/include -isystem /VCPKG/vcpkg/installed/x64-linux/include/SDL2
   OBJECT_DIR = 3-DeepNeuralNetwork/CMakeFiles/DeepNeuralNetwork.dir
   OBJECT_FILE_DIR = 3-DeepNeuralNetwork/CMakeFiles/DeepNeuralNetwork.dir
+  TARGET_COMPILE_PDB = 3-DeepNeuralNetwork/CMakeFiles/DeepNeuralNetwork.dir/
+  TARGET_PDB = 3-DeepNeuralNetwork/DeepNeuralNetwork.pdb
 
 build 3-DeepNeuralNetwork/CMakeFiles/DeepNeuralNetwork.dir/DeepNeuralNetwork.o: CXX_COMPILER__DeepNeuralNetwork_unscanned_Debug /media/trevor/49AD9A774ADB16B6/Echotones/Software/ML$ Implimentations/3-DeepNeuralNetwork/DeepNeuralNetwork.cpp || cmake_object_order_depends_target_DeepNeuralNetwork
   DEP_FILE = 3-DeepNeuralNetwork/CMakeFiles/DeepNeuralNetwork.dir/DeepNeuralNetwork.o.d
@@ -300,6 +317,8 @@ build 3-DeepNeuralNetwork/CMakeFiles/DeepNeuralNetwork.dir/DeepNeuralNetwork.o: 
   INCLUDES = -isystem /VCPKG/vcpkg/installed/x64-linux/include -isystem /VCPKG/vcpkg/installed/x64-linux/include/SDL2
   OBJECT_DIR = 3-DeepNeuralNetwork/CMakeFiles/DeepNeuralNetwork.dir
   OBJECT_FILE_DIR = 3-DeepNeuralNetwork/CMakeFiles/DeepNeuralNetwork.dir
+  TARGET_COMPILE_PDB = 3-DeepNeuralNetwork/CMakeFiles/DeepNeuralNetwork.dir/
+  TARGET_PDB = 3-DeepNeuralNetwork/DeepNeuralNetwork.pdb
 
 
 # =============================================================================
@@ -317,8 +336,9 @@ build 3-DeepNeuralNetwork/DeepNeuralNetwork: CXX_EXECUTABLE_LINKER__DeepNeuralNe
   OBJECT_DIR = 3-DeepNeuralNetwork/CMakeFiles/DeepNeuralNetwork.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = 3-DeepNeuralNetwork/CMakeFiles/DeepNeuralNetwork.dir/
   TARGET_FILE = 3-DeepNeuralNetwork/DeepNeuralNetwork
-  TARGET_PDB = DeepNeuralNetwork.dbg
+  TARGET_PDB = 3-DeepNeuralNetwork/DeepNeuralNetwork.pdb
 
 
 #############################################
@@ -363,6 +383,8 @@ build 4-RecurrentPerceptron/CMakeFiles/RecurrentPerceptron.dir/main.o: CXX_COMPI
   INCLUDES = -isystem /VCPKG/vcpkg/installed/x64-linux/include -isystem /VCPKG/vcpkg/installed/x64-linux/include/SDL2
   OBJECT_DIR = 4-RecurrentPerceptron/CMakeFiles/RecurrentPerceptron.dir
   OBJECT_FILE_DIR = 4-RecurrentPerceptron/CMakeFiles/RecurrentPerceptron.dir
+  TARGET_COMPILE_PDB = 4-RecurrentPerceptron/CMakeFiles/RecurrentPerceptron.dir/
+  TARGET_PDB = 4-RecurrentPerceptron/RecurrentPerceptron.pdb
 
 build 4-RecurrentPerceptron/CMakeFiles/RecurrentPerceptron.dir/RecurrentPerceptron.o: CXX_COMPILER__RecurrentPerceptron_unscanned_Debug /media/trevor/49AD9A774ADB16B6/Echotones/Software/ML$ Implimentations/4-RecurrentPerceptron/RecurrentPerceptron.cpp || cmake_object_order_depends_target_RecurrentPerceptron
   DEP_FILE = 4-RecurrentPerceptron/CMakeFiles/RecurrentPerceptron.dir/RecurrentPerceptron.o.d
@@ -370,6 +392,8 @@ build 4-RecurrentPerceptron/CMakeFiles/RecurrentPerceptron.dir/RecurrentPerceptr
   INCLUDES = -isystem /VCPKG/vcpkg/installed/x64-linux/include -isystem /VCPKG/vcpkg/installed/x64-linux/include/SDL2
   OBJECT_DIR = 4-RecurrentPerceptron/CMakeFiles/RecurrentPerceptron.dir
   OBJECT_FILE_DIR = 4-RecurrentPerceptron/CMakeFiles/RecurrentPerceptron.dir
+  TARGET_COMPILE_PDB = 4-RecurrentPerceptron/CMakeFiles/RecurrentPerceptron.dir/
+  TARGET_PDB = 4-RecurrentPerceptron/RecurrentPerceptron.pdb
 
 
 # =============================================================================
@@ -387,8 +411,9 @@ build 4-RecurrentPerceptron/RecurrentPerceptron: CXX_EXECUTABLE_LINKER__Recurren
   OBJECT_DIR = 4-RecurrentPerceptron/CMakeFiles/RecurrentPerceptron.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = 4-RecurrentPerceptron/CMakeFiles/RecurrentPerceptron.dir/
   TARGET_FILE = 4-RecurrentPerceptron/RecurrentPerceptron
-  TARGET_PDB = RecurrentPerceptron.dbg
+  TARGET_PDB = 4-RecurrentPerceptron/RecurrentPerceptron.pdb
 
 
 #############################################
@@ -433,6 +458,8 @@ build 5-RecurrentLayer/CMakeFiles/RecurrentLayer.dir/main.o: CXX_COMPILER__Recur
   INCLUDES = -isystem /VCPKG/vcpkg/installed/x64-linux/include -isystem /VCPKG/vcpkg/installed/x64-linux/include/SDL2
   OBJECT_DIR = 5-RecurrentLayer/CMakeFiles/RecurrentLayer.dir
   OBJECT_FILE_DIR = 5-RecurrentLayer/CMakeFiles/RecurrentLayer.dir
+  TARGET_COMPILE_PDB = 5-RecurrentLayer/CMakeFiles/RecurrentLayer.dir/
+  TARGET_PDB = 5-RecurrentLayer/RecurrentLayer.pdb
 
 build 5-RecurrentLayer/CMakeFiles/RecurrentLayer.dir/RecurrentLayer.o: CXX_COMPILER__RecurrentLayer_unscanned_Debug /media/trevor/49AD9A774ADB16B6/Echotones/Software/ML$ Implimentations/5-RecurrentLayer/RecurrentLayer.cpp || cmake_object_order_depends_target_RecurrentLayer
   DEP_FILE = 5-RecurrentLayer/CMakeFiles/RecurrentLayer.dir/RecurrentLayer.o.d
@@ -440,6 +467,8 @@ build 5-RecurrentLayer/CMakeFiles/RecurrentLayer.dir/RecurrentLayer.o: CXX_COMPI
   INCLUDES = -isystem /VCPKG/vcpkg/installed/x64-linux/include -isystem /VCPKG/vcpkg/installed/x64-linux/include/SDL2
   OBJECT_DIR = 5-RecurrentLayer/CMakeFiles/RecurrentLayer.dir
   OBJECT_FILE_DIR = 5-RecurrentLayer/CMakeFiles/RecurrentLayer.dir
+  TARGET_COMPILE_PDB = 5-RecurrentLayer/CMakeFiles/RecurrentLayer.dir/
+  TARGET_PDB = 5-RecurrentLayer/RecurrentLayer.pdb
 
 
 # =============================================================================
@@ -457,8 +486,9 @@ build 5-RecurrentLayer/RecurrentLayer: CXX_EXECUTABLE_LINKER__RecurrentLayer_Deb
   OBJECT_DIR = 5-RecurrentLayer/CMakeFiles/RecurrentLayer.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = 5-RecurrentLayer/CMakeFiles/RecurrentLayer.dir/
   TARGET_FILE = 5-RecurrentLayer/RecurrentLayer
-  TARGET_PDB = RecurrentLayer.dbg
+  TARGET_PDB = 5-RecurrentLayer/RecurrentLayer.pdb
 
 
 #############################################
@@ -503,6 +533,8 @@ build 6-RecurrentNeuralNetwork/CMakeFiles/RecurrentNeuralNetwork.dir/main.o: CXX
   INCLUDES = -isystem /VCPKG/vcpkg/installed/x64-linux/include -isystem /VCPKG/vcpkg/installed/x64-linux/include/SDL2
   OBJECT_DIR = 6-RecurrentNeuralNetwork/CMakeFiles/RecurrentNeuralNetwork.dir
   OBJECT_FILE_DIR = 6-RecurrentNeuralNetwork/CMakeFiles/RecurrentNeuralNetwork.dir
+  TARGET_COMPILE_PDB = 6-RecurrentNeuralNetwork/CMakeFiles/RecurrentNeuralNetwork.dir/
+  TARGET_PDB = 6-RecurrentNeuralNetwork/RecurrentNeuralNetwork.pdb
 
 build 6-RecurrentNeuralNetwork/CMakeFiles/RecurrentNeuralNetwork.dir/RecurrentNeuralNetwork.o: CXX_COMPILER__RecurrentNeuralNetwork_unscanned_Debug /media/trevor/49AD9A774ADB16B6/Echotones/Software/ML$ Implimentations/6-RecurrentNeuralNetwork/RecurrentNeuralNetwork.cpp || cmake_object_order_depends_target_RecurrentNeuralNetwork
   DEP_FILE = 6-RecurrentNeuralNetwork/CMakeFiles/RecurrentNeuralNetwork.dir/RecurrentNeuralNetwork.o.d
@@ -510,6 +542,8 @@ build 6-RecurrentNeuralNetwork/CMakeFiles/RecurrentNeuralNetwork.dir/RecurrentNe
   INCLUDES = -isystem /VCPKG/vcpkg/installed/x64-linux/include -isystem /VCPKG/vcpkg/installed/x64-linux/include/SDL2
   OBJECT_DIR = 6-RecurrentNeuralNetwork/CMakeFiles/RecurrentNeuralNetwork.dir
   OBJECT_FILE_DIR = 6-RecurrentNeuralNetwork/CMakeFiles/RecurrentNeuralNetwork.dir
+  TARGET_COMPILE_PDB = 6-RecurrentNeuralNetwork/CMakeFiles/RecurrentNeuralNetwork.dir/
+  TARGET_PDB = 6-RecurrentNeuralNetwork/RecurrentNeuralNetwork.pdb
 
 
 # =============================================================================
@@ -527,8 +561,9 @@ build 6-RecurrentNeuralNetwork/RecurrentNeuralNetwork: CXX_EXECUTABLE_LINKER__Re
   OBJECT_DIR = 6-RecurrentNeuralNetwork/CMakeFiles/RecurrentNeuralNetwork.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = 6-RecurrentNeuralNetwork/CMakeFiles/RecurrentNeuralNetwork.dir/
   TARGET_FILE = 6-RecurrentNeuralNetwork/RecurrentNeuralNetwork
-  TARGET_PDB = RecurrentNeuralNetwork.dbg
+  TARGET_PDB = 6-RecurrentNeuralNetwork/RecurrentNeuralNetwork.pdb
 
 
 #############################################
@@ -572,12 +607,16 @@ build 7-2DValidConvolutionLayer/CMakeFiles/2DValidConvolutionLayer.dir/main.o: C
   FLAGS = -g -std=gnu++20
   OBJECT_DIR = 7-2DValidConvolutionLayer/CMakeFiles/2DValidConvolutionLayer.dir
   OBJECT_FILE_DIR = 7-2DValidConvolutionLayer/CMakeFiles/2DValidConvolutionLayer.dir
+  TARGET_COMPILE_PDB = 7-2DValidConvolutionLayer/CMakeFiles/2DValidConvolutionLayer.dir/
+  TARGET_PDB = 7-2DValidConvolutionLayer/2DValidConvolutionLayer.pdb
 
 build 7-2DValidConvolutionLayer/CMakeFiles/2DValidConvolutionLayer.dir/2DValidConvolutionLayer.o: CXX_COMPILER__2DValidConvolutionLayer_unscanned_Debug /media/trevor/49AD9A774ADB16B6/Echotones/Software/ML$ Implimentations/7-2DValidConvolutionLayer/2DValidConvolutionLayer.cpp || cmake_object_order_depends_target_2DValidConvolutionLayer
   DEP_FILE = 7-2DValidConvolutionLayer/CMakeFiles/2DValidConvolutionLayer.dir/2DValidConvolutionLayer.o.d
   FLAGS = -g -std=gnu++20
   OBJECT_DIR = 7-2DValidConvolutionLayer/CMakeFiles/2DValidConvolutionLayer.dir
   OBJECT_FILE_DIR = 7-2DValidConvolutionLayer/CMakeFiles/2DValidConvolutionLayer.dir
+  TARGET_COMPILE_PDB = 7-2DValidConvolutionLayer/CMakeFiles/2DValidConvolutionLayer.dir/
+  TARGET_PDB = 7-2DValidConvolutionLayer/2DValidConvolutionLayer.pdb
 
 
 # =============================================================================
@@ -593,8 +632,9 @@ build 7-2DValidConvolutionLayer/2DValidConvolutionLayer: CXX_EXECUTABLE_LINKER__
   OBJECT_DIR = 7-2DValidConvolutionLayer/CMakeFiles/2DValidConvolutionLayer.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = 7-2DValidConvolutionLayer/CMakeFiles/2DValidConvolutionLayer.dir/
   TARGET_FILE = 7-2DValidConvolutionLayer/2DValidConvolutionLayer
-  TARGET_PDB = 2DValidConvolutionLayer.dbg
+  TARGET_PDB = 7-2DValidConvolutionLayer/2DValidConvolutionLayer.pdb
 
 
 #############################################
@@ -638,12 +678,16 @@ build 8-2DFullConvolutionLayer/CMakeFiles/2DFullConvolutionLayer.dir/main.o: CXX
   FLAGS = -g -std=gnu++20
   OBJECT_DIR = 8-2DFullConvolutionLayer/CMakeFiles/2DFullConvolutionLayer.dir
   OBJECT_FILE_DIR = 8-2DFullConvolutionLayer/CMakeFiles/2DFullConvolutionLayer.dir
+  TARGET_COMPILE_PDB = 8-2DFullConvolutionLayer/CMakeFiles/2DFullConvolutionLayer.dir/
+  TARGET_PDB = 8-2DFullConvolutionLayer/2DFullConvolutionLayer.pdb
 
 build 8-2DFullConvolutionLayer/CMakeFiles/2DFullConvolutionLayer.dir/2DFullConvolutionLayer.o: CXX_COMPILER__2DFullConvolutionLayer_unscanned_Debug /media/trevor/49AD9A774ADB16B6/Echotones/Software/ML$ Implimentations/8-2DFullConvolutionLayer/2DFullConvolutionLayer.cpp || cmake_object_order_depends_target_2DFullConvolutionLayer
   DEP_FILE = 8-2DFullConvolutionLayer/CMakeFiles/2DFullConvolutionLayer.dir/2DFullConvolutionLayer.o.d
   FLAGS = -g -std=gnu++20
   OBJECT_DIR = 8-2DFullConvolutionLayer/CMakeFiles/2DFullConvolutionLayer.dir
   OBJECT_FILE_DIR = 8-2DFullConvolutionLayer/CMakeFiles/2DFullConvolutionLayer.dir
+  TARGET_COMPILE_PDB = 8-2DFullConvolutionLayer/CMakeFiles/2DFullConvolutionLayer.dir/
+  TARGET_PDB = 8-2DFullConvolutionLayer/2DFullConvolutionLayer.pdb
 
 
 # =============================================================================
@@ -659,8 +703,9 @@ build 8-2DFullConvolutionLayer/2DFullConvolutionLayer: CXX_EXECUTABLE_LINKER__2D
   OBJECT_DIR = 8-2DFullConvolutionLayer/CMakeFiles/2DFullConvolutionLayer.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = 8-2DFullConvolutionLayer/CMakeFiles/2DFullConvolutionLayer.dir/
   TARGET_FILE = 8-2DFullConvolutionLayer/2DFullConvolutionLayer
-  TARGET_PDB = 2DFullConvolutionLayer.dbg
+  TARGET_PDB = 8-2DFullConvolutionLayer/2DFullConvolutionLayer.pdb
 
 
 #############################################
@@ -694,6 +739,8 @@ build 2DValidConvolutionLayer: phony 7-2DValidConvolutionLayer/2DValidConvolutio
 
 build DeepNeuralNetwork: phony 3-DeepNeuralNetwork/DeepNeuralNetwork
 
+build MLLib: phony MLLib/MLLib
+
 build Perceptron: phony 1-Perceptron/Perceptron
 
 build PerceptronLayer: phony 2-PerceptronLayer/PerceptronLayer
@@ -704,8 +751,6 @@ build RecurrentNeuralNetwork: phony 6-RecurrentNeuralNetwork/RecurrentNeuralNetw
 
 build RecurrentPerceptron: phony 4-RecurrentPerceptron/RecurrentPerceptron
 
-build TensorLib: phony TensorLib/TensorLib
-
 # =============================================================================
 # Folder targets.
 
@@ -714,7 +759,7 @@ build TensorLib: phony TensorLib/TensorLib
 #############################################
 # Folder: /media/trevor/49AD9A774ADB16B6/Echotones/Software/ML Implimentations/build
 
-build all: phony TensorLib/all 1-Perceptron/all 2-PerceptronLayer/all 3-DeepNeuralNetwork/all 4-RecurrentPerceptron/all 5-RecurrentLayer/all 6-RecurrentNeuralNetwork/all 7-2DValidConvolutionLayer/all 8-2DFullConvolutionLayer/all
+build all: phony MLLib/all 1-Perceptron/all 2-PerceptronLayer/all 3-DeepNeuralNetwork/all 4-RecurrentPerceptron/all 5-RecurrentLayer/all 6-RecurrentNeuralNetwork/all 7-2DValidConvolutionLayer/all 8-2DFullConvolutionLayer/all
 
 # =============================================================================
 
@@ -775,9 +820,9 @@ build 8-2DFullConvolutionLayer/all: phony 8-2DFullConvolutionLayer/2DFullConvolu
 # =============================================================================
 
 #############################################
-# Folder: /media/trevor/49AD9A774ADB16B6/Echotones/Software/ML Implimentations/build/TensorLib
+# Folder: /media/trevor/49AD9A774ADB16B6/Echotones/Software/ML Implimentations/build/MLLib
 
-build TensorLib/all: phony TensorLib/TensorLib
+build MLLib/all: phony MLLib/MLLib
 
 # =============================================================================
 # Unknown Build Time Dependencies.
@@ -791,14 +836,14 @@ build TensorLib/all: phony TensorLib/TensorLib
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /VCPKG/vcpkg/installed/x64-linux/share/SDL2_ttf/SDL2_ttf-static-targets-debug.cmake /VCPKG/vcpkg/installed/x64-linux/share/SDL2_ttf/SDL2_ttf-static-targets-release.cmake /VCPKG/vcpkg/installed/x64-linux/share/SDL2_ttf/SDL2_ttf-static-targets.cmake /VCPKG/vcpkg/installed/x64-linux/share/SDL2_ttf/SDL2_ttfConfig.cmake /VCPKG/vcpkg/installed/x64-linux/share/SDL2_ttf/SDL2_ttfConfigVersion.cmake /VCPKG/vcpkg/installed/x64-linux/share/freetype/freetype-config-version.cmake /VCPKG/vcpkg/installed/x64-linux/share/freetype/freetype-config.cmake /VCPKG/vcpkg/installed/x64-linux/share/freetype/freetype-targets-debug.cmake /VCPKG/vcpkg/installed/x64-linux/share/freetype/freetype-targets-release.cmake /VCPKG/vcpkg/installed/x64-linux/share/freetype/freetype-targets.cmake /VCPKG/vcpkg/installed/x64-linux/share/freetype/vcpkg-cmake-wrapper.cmake /VCPKG/vcpkg/installed/x64-linux/share/opencl/vcpkg-cmake-wrapper.cmake /VCPKG/vcpkg/installed/x64-linux/share/png/vcpkg-cmake-wrapper.cmake /VCPKG/vcpkg/installed/x64-linux/share/sdl2/SDL2Config.cmake /VCPKG/vcpkg/installed/x64-linux/share/sdl2/SDL2ConfigVersion.cmake /VCPKG/vcpkg/installed/x64-linux/share/sdl2/SDL2mainTargets-debug.cmake /VCPKG/vcpkg/installed/x64-linux/share/sdl2/SDL2mainTargets-release.cmake /VCPKG/vcpkg/installed/x64-linux/share/sdl2/SDL2mainTargets.cmake /VCPKG/vcpkg/installed/x64-linux/share/sdl2/SDL2staticTargets-debug.cmake /VCPKG/vcpkg/installed/x64-linux/share/sdl2/SDL2staticTargets-release.cmake /VCPKG/vcpkg/installed/x64-linux/share/sdl2/SDL2staticTargets.cmake /VCPKG/vcpkg/installed/x64-linux/share/sdl2/sdlfind.cmake /VCPKG/vcpkg/installed/x64-linux/share/zlib/vcpkg-cmake-wrapper.cmake /VCPKG/vcpkg/scripts/buildsystems/vcpkg.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeCInformation.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeCXXInformation.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeDependentOption.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeGenericSystem.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakePushCheckState.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CheckIncludeFile.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CheckLibraryExists.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CheckSymbolExists.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/GNU-C.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/GNU.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/FeatureSummary.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/FindBZip2.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/FindOpenCL.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/FindPNG.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/FindPackageMessage.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/FindThreads.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/FindZLIB.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Platform/Linux-GNU-C.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Platform/Linux-GNU-CXX.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Platform/Linux-GNU.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Platform/Linux-Initialize.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Platform/Linux.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Platform/UnixPaths.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/SelectLibraryConfigurations.cmake /media/trevor/49AD9A774ADB16B6/Echotones/Software/ML$ Implimentations/1-Perceptron/CMakeLists.txt /media/trevor/49AD9A774ADB16B6/Echotones/Software/ML$ Implimentations/2-PerceptronLayer/CMakeLists.txt /media/trevor/49AD9A774ADB16B6/Echotones/Software/ML$ Implimentations/3-DeepNeuralNetwork/CMakeLists.txt /media/trevor/49AD9A774ADB16B6/Echotones/Software/ML$ Implimentations/4-RecurrentPerceptron/CMakeLists.txt /media/trevor/49AD9A774ADB16B6/Echotones/Software/ML$ Implimentations/5-RecurrentLayer/CMakeLists.txt /media/trevor/49AD9A774ADB16B6/Echotones/Software/ML$ Implimentations/6-RecurrentNeuralNetwork/CMakeLists.txt /media/trevor/49AD9A774ADB16B6/Echotones/Software/ML$ Implimentations/7-2DValidConvolutionLayer/CMakeLists.txt /media/trevor/49AD9A774ADB16B6/Echotones/Software/ML$ Implimentations/8-2DFullConvolutionLayer/CMakeLists.txt /media/trevor/49AD9A774ADB16B6/Echotones/Software/ML$ Implimentations/CMakeLists.txt /media/trevor/49AD9A774ADB16B6/Echotones/Software/ML$ Implimentations/TensorLib/CMakeLists.txt CMakeCache.txt CMakeFiles/3.28.3/CMakeCCompiler.cmake CMakeFiles/3.28.3/CMakeCXXCompiler.cmake CMakeFiles/3.28.3/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /VCPKG/vcpkg/installed/x64-linux/share/SDL2_ttf/SDL2_ttf-static-targets-debug.cmake /VCPKG/vcpkg/installed/x64-linux/share/SDL2_ttf/SDL2_ttf-static-targets-release.cmake /VCPKG/vcpkg/installed/x64-linux/share/SDL2_ttf/SDL2_ttf-static-targets.cmake /VCPKG/vcpkg/installed/x64-linux/share/SDL2_ttf/SDL2_ttfConfig.cmake /VCPKG/vcpkg/installed/x64-linux/share/SDL2_ttf/SDL2_ttfConfigVersion.cmake /VCPKG/vcpkg/installed/x64-linux/share/freetype/freetype-config-version.cmake /VCPKG/vcpkg/installed/x64-linux/share/freetype/freetype-config.cmake /VCPKG/vcpkg/installed/x64-linux/share/freetype/freetype-targets-debug.cmake /VCPKG/vcpkg/installed/x64-linux/share/freetype/freetype-targets-release.cmake /VCPKG/vcpkg/installed/x64-linux/share/freetype/freetype-targets.cmake /VCPKG/vcpkg/installed/x64-linux/share/freetype/vcpkg-cmake-wrapper.cmake /VCPKG/vcpkg/installed/x64-linux/share/opencl/vcpkg-cmake-wrapper.cmake /VCPKG/vcpkg/installed/x64-linux/share/png/vcpkg-cmake-wrapper.cmake /VCPKG/vcpkg/installed/x64-linux/share/sdl2/SDL2Config.cmake /VCPKG/vcpkg/installed/x64-linux/share/sdl2/SDL2ConfigVersion.cmake /VCPKG/vcpkg/installed/x64-linux/share/sdl2/SDL2mainTargets-debug.cmake /VCPKG/vcpkg/installed/x64-linux/share/sdl2/SDL2mainTargets-release.cmake /VCPKG/vcpkg/installed/x64-linux/share/sdl2/SDL2mainTargets.cmake /VCPKG/vcpkg/installed/x64-linux/share/sdl2/SDL2staticTargets-debug.cmake /VCPKG/vcpkg/installed/x64-linux/share/sdl2/SDL2staticTargets-release.cmake /VCPKG/vcpkg/installed/x64-linux/share/sdl2/SDL2staticTargets.cmake /VCPKG/vcpkg/installed/x64-linux/share/sdl2/sdlfind.cmake /VCPKG/vcpkg/installed/x64-linux/share/zlib/vcpkg-cmake-wrapper.cmake /VCPKG/vcpkg/scripts/buildsystems/vcpkg.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeCCompiler.cmake.in /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeCCompilerABI.c /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeCInformation.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeCXXCompiler.cmake.in /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeCXXInformation.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeCompilerIdDetection.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeDependentOption.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeDetermineCompileFeatures.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeDetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeFindBinUtils.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeGenericSystem.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeNinjaFindMake.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeParseImplicitIncludeInfo.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeParseImplicitLinkInfo.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeParseLibraryArchitecture.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakePushCheckState.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeSystem.cmake.in /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeTestCompilerCommon.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CheckIncludeFile.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CheckLibraryExists.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CheckSymbolExists.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/ADSP-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/ARMCC-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/ARMClang-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/AppleClang-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/Borland-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/Cray-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/CrayClang-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/GHS-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/GNU-C-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/GNU-C.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/GNU-FindBinUtils.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/GNU.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/HP-C-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/IAR-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/Intel-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/LCC-C-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/MSVC-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/NVHPC-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/OrangeC-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/PGI-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/PathScale-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/SCO-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/TI-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/Tasking-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/Watcom-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/XL-C-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/zOS-C-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/FeatureSummary.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/FindBZip2.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/FindOpenCL.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/FindPNG.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/FindPackageMessage.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/FindThreads.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/FindZLIB.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Internal/FeatureTesting.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Platform/Linux-Determine-CXX.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Platform/Linux-GNU-C.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Platform/Linux-GNU-CXX.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Platform/Linux-GNU.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Platform/Linux-Initialize.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Platform/Linux.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Platform/UnixPaths.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/SelectLibraryConfigurations.cmake /media/trevor/49AD9A774ADB16B6/Echotones/Software/ML$ Implimentations/1-Perceptron/CMakeLists.txt /media/trevor/49AD9A774ADB16B6/Echotones/Software/ML$ Implimentations/2-PerceptronLayer/CMakeLists.txt /media/trevor/49AD9A774ADB16B6/Echotones/Software/ML$ Implimentations/3-DeepNeuralNetwork/CMakeLists.txt /media/trevor/49AD9A774ADB16B6/Echotones/Software/ML$ Implimentations/4-RecurrentPerceptron/CMakeLists.txt /media/trevor/49AD9A774ADB16B6/Echotones/Software/ML$ Implimentations/5-RecurrentLayer/CMakeLists.txt /media/trevor/49AD9A774ADB16B6/Echotones/Software/ML$ Implimentations/6-RecurrentNeuralNetwork/CMakeLists.txt /media/trevor/49AD9A774ADB16B6/Echotones/Software/ML$ Implimentations/7-2DValidConvolutionLayer/CMakeLists.txt /media/trevor/49AD9A774ADB16B6/Echotones/Software/ML$ Implimentations/8-2DFullConvolutionLayer/CMakeLists.txt /media/trevor/49AD9A774ADB16B6/Echotones/Software/ML$ Implimentations/CMakeLists.txt /media/trevor/49AD9A774ADB16B6/Echotones/Software/ML$ Implimentations/MLLib/CMakeLists.txt CMakeCache.txt CMakeFiles/3.28.3/CMakeCCompiler.cmake CMakeFiles/3.28.3/CMakeCXXCompiler.cmake CMakeFiles/3.28.3/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /VCPKG/vcpkg/installed/x64-linux/share/SDL2_ttf/SDL2_ttf-static-targets-debug.cmake /VCPKG/vcpkg/installed/x64-linux/share/SDL2_ttf/SDL2_ttf-static-targets-release.cmake /VCPKG/vcpkg/installed/x64-linux/share/SDL2_ttf/SDL2_ttf-static-targets.cmake /VCPKG/vcpkg/installed/x64-linux/share/SDL2_ttf/SDL2_ttfConfig.cmake /VCPKG/vcpkg/installed/x64-linux/share/SDL2_ttf/SDL2_ttfConfigVersion.cmake /VCPKG/vcpkg/installed/x64-linux/share/freetype/freetype-config-version.cmake /VCPKG/vcpkg/installed/x64-linux/share/freetype/freetype-config.cmake /VCPKG/vcpkg/installed/x64-linux/share/freetype/freetype-targets-debug.cmake /VCPKG/vcpkg/installed/x64-linux/share/freetype/freetype-targets-release.cmake /VCPKG/vcpkg/installed/x64-linux/share/freetype/freetype-targets.cmake /VCPKG/vcpkg/installed/x64-linux/share/freetype/vcpkg-cmake-wrapper.cmake /VCPKG/vcpkg/installed/x64-linux/share/opencl/vcpkg-cmake-wrapper.cmake /VCPKG/vcpkg/installed/x64-linux/share/png/vcpkg-cmake-wrapper.cmake /VCPKG/vcpkg/installed/x64-linux/share/sdl2/SDL2Config.cmake /VCPKG/vcpkg/installed/x64-linux/share/sdl2/SDL2ConfigVersion.cmake /VCPKG/vcpkg/installed/x64-linux/share/sdl2/SDL2mainTargets-debug.cmake /VCPKG/vcpkg/installed/x64-linux/share/sdl2/SDL2mainTargets-release.cmake /VCPKG/vcpkg/installed/x64-linux/share/sdl2/SDL2mainTargets.cmake /VCPKG/vcpkg/installed/x64-linux/share/sdl2/SDL2staticTargets-debug.cmake /VCPKG/vcpkg/installed/x64-linux/share/sdl2/SDL2staticTargets-release.cmake /VCPKG/vcpkg/installed/x64-linux/share/sdl2/SDL2staticTargets.cmake /VCPKG/vcpkg/installed/x64-linux/share/sdl2/sdlfind.cmake /VCPKG/vcpkg/installed/x64-linux/share/zlib/vcpkg-cmake-wrapper.cmake /VCPKG/vcpkg/scripts/buildsystems/vcpkg.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeCInformation.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeCXXInformation.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeDependentOption.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeGenericSystem.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakePushCheckState.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CheckIncludeFile.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CheckLibraryExists.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CheckSymbolExists.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/GNU-C.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/GNU.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/FeatureSummary.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/FindBZip2.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/FindOpenCL.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/FindPNG.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/FindPackageMessage.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/FindThreads.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/FindZLIB.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Platform/Linux-GNU-C.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Platform/Linux-GNU-CXX.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Platform/Linux-GNU.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Platform/Linux-Initialize.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Platform/Linux.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Platform/UnixPaths.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/SelectLibraryConfigurations.cmake /media/trevor/49AD9A774ADB16B6/Echotones/Software/ML$ Implimentations/1-Perceptron/CMakeLists.txt /media/trevor/49AD9A774ADB16B6/Echotones/Software/ML$ Implimentations/2-PerceptronLayer/CMakeLists.txt /media/trevor/49AD9A774ADB16B6/Echotones/Software/ML$ Implimentations/3-DeepNeuralNetwork/CMakeLists.txt /media/trevor/49AD9A774ADB16B6/Echotones/Software/ML$ Implimentations/4-RecurrentPerceptron/CMakeLists.txt /media/trevor/49AD9A774ADB16B6/Echotones/Software/ML$ Implimentations/5-RecurrentLayer/CMakeLists.txt /media/trevor/49AD9A774ADB16B6/Echotones/Software/ML$ Implimentations/6-RecurrentNeuralNetwork/CMakeLists.txt /media/trevor/49AD9A774ADB16B6/Echotones/Software/ML$ Implimentations/7-2DValidConvolutionLayer/CMakeLists.txt /media/trevor/49AD9A774ADB16B6/Echotones/Software/ML$ Implimentations/8-2DFullConvolutionLayer/CMakeLists.txt /media/trevor/49AD9A774ADB16B6/Echotones/Software/ML$ Implimentations/CMakeLists.txt /media/trevor/49AD9A774ADB16B6/Echotones/Software/ML$ Implimentations/TensorLib/CMakeLists.txt CMakeCache.txt CMakeFiles/3.28.3/CMakeCCompiler.cmake CMakeFiles/3.28.3/CMakeCXXCompiler.cmake CMakeFiles/3.28.3/CMakeSystem.cmake: phony
+build /VCPKG/vcpkg/installed/x64-linux/share/SDL2_ttf/SDL2_ttf-static-targets-debug.cmake /VCPKG/vcpkg/installed/x64-linux/share/SDL2_ttf/SDL2_ttf-static-targets-release.cmake /VCPKG/vcpkg/installed/x64-linux/share/SDL2_ttf/SDL2_ttf-static-targets.cmake /VCPKG/vcpkg/installed/x64-linux/share/SDL2_ttf/SDL2_ttfConfig.cmake /VCPKG/vcpkg/installed/x64-linux/share/SDL2_ttf/SDL2_ttfConfigVersion.cmake /VCPKG/vcpkg/installed/x64-linux/share/freetype/freetype-config-version.cmake /VCPKG/vcpkg/installed/x64-linux/share/freetype/freetype-config.cmake /VCPKG/vcpkg/installed/x64-linux/share/freetype/freetype-targets-debug.cmake /VCPKG/vcpkg/installed/x64-linux/share/freetype/freetype-targets-release.cmake /VCPKG/vcpkg/installed/x64-linux/share/freetype/freetype-targets.cmake /VCPKG/vcpkg/installed/x64-linux/share/freetype/vcpkg-cmake-wrapper.cmake /VCPKG/vcpkg/installed/x64-linux/share/opencl/vcpkg-cmake-wrapper.cmake /VCPKG/vcpkg/installed/x64-linux/share/png/vcpkg-cmake-wrapper.cmake /VCPKG/vcpkg/installed/x64-linux/share/sdl2/SDL2Config.cmake /VCPKG/vcpkg/installed/x64-linux/share/sdl2/SDL2ConfigVersion.cmake /VCPKG/vcpkg/installed/x64-linux/share/sdl2/SDL2mainTargets-debug.cmake /VCPKG/vcpkg/installed/x64-linux/share/sdl2/SDL2mainTargets-release.cmake /VCPKG/vcpkg/installed/x64-linux/share/sdl2/SDL2mainTargets.cmake /VCPKG/vcpkg/installed/x64-linux/share/sdl2/SDL2staticTargets-debug.cmake /VCPKG/vcpkg/installed/x64-linux/share/sdl2/SDL2staticTargets-release.cmake /VCPKG/vcpkg/installed/x64-linux/share/sdl2/SDL2staticTargets.cmake /VCPKG/vcpkg/installed/x64-linux/share/sdl2/sdlfind.cmake /VCPKG/vcpkg/installed/x64-linux/share/zlib/vcpkg-cmake-wrapper.cmake /VCPKG/vcpkg/scripts/buildsystems/vcpkg.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeCCompiler.cmake.in /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeCCompilerABI.c /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeCInformation.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeCXXCompiler.cmake.in /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeCXXInformation.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeCompilerIdDetection.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeDependentOption.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeDetermineCompileFeatures.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeDetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeFindBinUtils.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeGenericSystem.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeNinjaFindMake.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeParseImplicitIncludeInfo.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeParseImplicitLinkInfo.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeParseLibraryArchitecture.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakePushCheckState.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeSystem.cmake.in /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CMakeTestCompilerCommon.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CheckIncludeFile.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CheckLibraryExists.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/CheckSymbolExists.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/ADSP-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/ARMCC-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/ARMClang-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/AppleClang-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/Borland-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/Cray-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/CrayClang-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/GHS-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/GNU-C-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/GNU-C.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/GNU-FindBinUtils.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/GNU.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/HP-C-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/IAR-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/Intel-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/LCC-C-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/MSVC-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/NVHPC-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/OrangeC-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/PGI-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/PathScale-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/SCO-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/TI-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/Tasking-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/Watcom-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/XL-C-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/zOS-C-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/FeatureSummary.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/FindBZip2.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/FindOpenCL.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/FindPNG.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/FindPackageMessage.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/FindThreads.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/FindZLIB.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Internal/FeatureTesting.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Platform/Linux-Determine-CXX.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Platform/Linux-GNU-C.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Platform/Linux-GNU-CXX.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Platform/Linux-GNU.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Platform/Linux-Initialize.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Platform/Linux.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/Platform/UnixPaths.cmake /home/trevor/miniconda3/lib/python3.11/site-packages/cmake/data/share/cmake-3.28/Modules/SelectLibraryConfigurations.cmake /media/trevor/49AD9A774ADB16B6/Echotones/Software/ML$ Implimentations/1-Perceptron/CMakeLists.txt /media/trevor/49AD9A774ADB16B6/Echotones/Software/ML$ Implimentations/2-PerceptronLayer/CMakeLists.txt /media/trevor/49AD9A774ADB16B6/Echotones/Software/ML$ Implimentations/3-DeepNeuralNetwork/CMakeLists.txt /media/trevor/49AD9A774ADB16B6/Echotones/Software/ML$ Implimentations/4-RecurrentPerceptron/CMakeLists.txt /media/trevor/49AD9A774ADB16B6/Echotones/Software/ML$ Implimentations/5-RecurrentLayer/CMakeLists.txt /media/trevor/49AD9A774ADB16B6/Echotones/Software/ML$ Implimentations/6-RecurrentNeuralNetwork/CMakeLists.txt /media/trevor/49AD9A774ADB16B6/Echotones/Software/ML$ Implimentations/7-2DValidConvolutionLayer/CMakeLists.txt /media/trevor/49AD9A774ADB16B6/Echotones/Software/ML$ Implimentations/8-2DFullConvolutionLayer/CMakeLists.txt /media/trevor/49AD9A774ADB16B6/Echotones/Software/ML$ Implimentations/CMakeLists.txt /media/trevor/49AD9A774ADB16B6/Echotones/Software/ML$ Implimentations/MLLib/CMakeLists.txt CMakeCache.txt CMakeFiles/3.28.3/CMakeCCompiler.cmake CMakeFiles/3.28.3/CMakeCXXCompiler.cmake CMakeFiles/3.28.3/CMakeSystem.cmake: phony
 
 
 #############################################

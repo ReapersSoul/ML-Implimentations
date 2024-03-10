@@ -52,16 +52,30 @@ std::vector<double> DeepNeuralNetwork::BackwardLayer(std::vector<double> _x, std
 {
 	std::vector<double> dx(_w.size());
 	std::vector<double> dz(_w[0].size());
-	for (int j = 0; j < _w[0].size(); j++)
+
+	//previous cpu implementation
+	// for (int j = 0; j < _w[0].size(); j++)
+	// {
+	// 	dz[j] = _af->Derivative(_z[j]) * _fg[j];
+	// 	for (int i = 0; i < _w.size(); i++)
+	// 	{
+	// 		dx[i] += _w[i][j] * dz[j];
+	// 		_w[i][j] -= _lr * dz[j] * _x[i];
+	// 	}
+	// 	_b[j] -= _lr * dz[j];
+	// }
+
+	//gpu implementation
+	std::vector<std::vector<double>> W_Transpose(_w.size(), std::vector<double>(_w[0].size()));
+	GPU_TransposeMatrix(_w, W_Transpose);
+	for (int i = 0; i < W_Transpose.size(); i++)
 	{
-		dz[j] = _af->Derivative(_z[j]) * _fg[j];
-		for (int i = 0; i < _w.size(); i++)
+		for (int j = 0; j < W_Transpose[i].size(); j++)
 		{
-			dx[i] += _w[i][j] * dz[j];
-			_w[i][j] -= _lr * dz[j] * _x[i];
+			W_Transpose[i][j] *= dz[j];
 		}
-		_b[j] -= _lr * dz[j];
 	}
+
 	return dx;
 }
 

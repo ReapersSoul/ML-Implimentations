@@ -1,8 +1,8 @@
 /media/trevor/49AD9A774ADB16B6/Echotones/Software/ML Implimentations/build/CMakeFiles/edit_cache.dir
 /media/trevor/49AD9A774ADB16B6/Echotones/Software/ML Implimentations/build/CMakeFiles/rebuild_cache.dir
-/media/trevor/49AD9A774ADB16B6/Echotones/Software/ML Implimentations/build/TensorLib/CMakeFiles/TensorLib.dir
-/media/trevor/49AD9A774ADB16B6/Echotones/Software/ML Implimentations/build/TensorLib/CMakeFiles/edit_cache.dir
-/media/trevor/49AD9A774ADB16B6/Echotones/Software/ML Implimentations/build/TensorLib/CMakeFiles/rebuild_cache.dir
+/media/trevor/49AD9A774ADB16B6/Echotones/Software/ML Implimentations/build/MLLib/CMakeFiles/MLLib.dir
+/media/trevor/49AD9A774ADB16B6/Echotones/Software/ML Implimentations/build/MLLib/CMakeFiles/edit_cache.dir
+/media/trevor/49AD9A774ADB16B6/Echotones/Software/ML Implimentations/build/MLLib/CMakeFiles/rebuild_cache.dir
 /media/trevor/49AD9A774ADB16B6/Echotones/Software/ML Implimentations/build/1-Perceptron/CMakeFiles/Perceptron.dir
 /media/trevor/49AD9A774ADB16B6/Echotones/Software/ML Implimentations/build/1-Perceptron/CMakeFiles/edit_cache.dir
 /media/trevor/49AD9A774ADB16B6/Echotones/Software/ML Implimentations/build/1-Perceptron/CMakeFiles/rebuild_cache.dir

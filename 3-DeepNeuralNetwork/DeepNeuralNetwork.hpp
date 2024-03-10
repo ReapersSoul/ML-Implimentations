@@ -5,6 +5,7 @@
 
 #include "../0-Helpers/HelperFunctions.hpp"
 #include "../0-Helpers/ActivationFunction.hpp"
+#include "../TensorLib/TensorLib.hpp"
 
 class DeepNeuralNetwork
 {
